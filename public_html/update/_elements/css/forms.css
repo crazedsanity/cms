@@ -1,0 +1,68 @@
+/* --------------------------------------------------------------
+
+   forms.css
+   * Sets up some default styling for forms
+   * Gives you classes to enhance your forms
+
+   Usage:
+   * For text fields, use class .title or .text
+   * For inline forms, use .inline (even when using columns)
+
+-------------------------------------------------------------- */
+
+label       { font-weight: bold; /*padding-right:2em;*/ }
+fieldset    { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend      { font-weight: bold; font-size:1.2em; }
+
+
+/* Form fields
+-------------------------------------------------------------- */
+
+input[type=text], input[type=password],
+input.text, input.title,
+textarea, select {
+  background-color:#fff;
+  border:1px solid #bbb;
+}
+input[type=text]:focus, input[type=password]:focus,
+input.text:focus, input.title:focus,
+textarea:focus, select:focus {
+  border-color:#666;
+}
+
+input[type=text], input[type=password],
+input.text, input.title,
+textarea, select {
+  margin:0.5em 0;
+}
+
+input[type=text] { 
+width: 300px; 
+padding:5px;
+} 
+
+form input.text,
+form input.title   { width: 300px; padding:5px; }
+form input.title   { font-size:1.5em; }
+form textarea      { font-size: 1.5em; height: 150px; padding:5px; }
+form select.title{
+font-size: 1.5em;
+}
+
+form text { width: 300px; padding:5px;}
+
+input[type=checkbox], input[type=radio],
+input.checkbox, input.radio {
+  vertical-align:baseline;
+}
+
+form input[type=checkbox].title, form input[type=radio].title{
+  width: auto;
+margin: 10px;
+}
+
+form.inline { line-height:3; }
+form.inline p { margin-bottom:0; }
+
+
+

@@ -1,0 +1,185 @@
+@media print {
+	#sidebar {
+		display: none;
+	}
+	#header {
+		display: none;
+	}
+	#footer {
+		display: none;
+	}
+	.page-title {
+		display: none;
+	}
+	#clicktoprint {
+		display: none;
+	}
+	.disclaimer {
+		display: none;
+	}
+	input[type=text], input[type=password], input.text, input.title,
+	textarea, required {
+		font-weight: 600;
+	}
+	input, textarea, select {
+		font-size: 9px;
+	}
+	.empapp, .form {
+		margin-top: -50px;
+		margin-bottom: 0px;
+	}
+	#main_cont {
+		width:98%;
+		/*margin: 0;*/
+	}
+	td {
+		/*width: 75%;*/
+	}
+	tr.noprint {
+		display: none;
+	}
+	.noprint {
+		display: none;
+	}
+	div.controls {
+		display: none;
+	}
+	h2.notcached {
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-bottom: 4em;
+	}
+	textarea {
+		overflow: auto;
+	}
+	#references td:last-child {
+		white-space: nowrap;
+	}
+
+
+
+
+	/* Employment css */
+	.form table {
+		width: 98%;
+		border:10;
+	}
+	.form h2{
+		margin: 0;
+		padding: 0;
+		float: left;
+		width: 100%;
+	}
+	.form h3{
+		margin: 0;
+		padding: 0;
+		float: left;
+		width: 100%;
+
+	}
+	.form .row{
+		clear: both; 
+		margin: 0px 0 12px 0;
+		/*float: left;*/
+		width: 100%;
+	}
+	.form .row .field{
+		float: left;
+		width:100%;
+	}
+	.form .row.two .field{
+		width:28%;
+	}
+	.form .row.three .field{
+		width:23%;
+	}
+	.form .row.four .field{
+		width:23%;
+	}
+
+	.form .row .field input, .form .row .field select, .form .row .field textarea{
+		/*width: 90%;*/ 
+		font-size: 18px;
+		padding: 3px;
+		border: 1px solid #ccc;
+	}
+	.form .row .field input:focus, .form .row .field select:focus, .form .row .field textarea:focus{
+		border: 1px solid #666;
+	}
+	.form .row .field label.checkbox_option{
+		float: left;
+		width: auto;
+		display: block;
+		margin: 0 12px 6px 0;
+	}
+	.form .row .field label.checkbox_option+br{
+		display: none; 
+	}
+	.form .row .field label.checkbox_option input{
+		width: auto;
+		float: left;
+		margin: 0 12px 0 0 0;
+	}
+	.errormsg{
+		color: red;
+		text-align: center;
+
+	}
+	.successmsg{
+		color: green;
+		text-align: center;
+	}
+
+
+
+
+
+
+
+	/*form specific styles*/
+	.form.apply .row .field label.checkbox_option{
+		width: 290px;
+	}
+	.form.apply .row{
+		margin-left: 2%;
+		margin-right: 2%;
+		width: 99%;
+	}
+	.form.apply h2{
+		margin: 12px 0 6px 0;
+		cursor: pointer;
+	}
+	.form.apply h2 span{
+		padding-right: 6px; 
+		color: #000;
+	}
+	.form.apply h3{
+		margin: 9px 0 3px 1%;
+	}
+	.form.apply .group{
+		border: 1px solid #ccc;
+		background: #eee;
+		float: left;
+		width: 98%;
+		clear: both;
+		margin: 0 0 24px 0;
+		padding: 6px 1%;
+	}
+	.form.apply .group.haserror{
+		border: 1px solid #f00;
+	}
+	.form.apply textarea{
+		height: 100px; 
+	}
+	.form.apply label.fielderror{
+		color: #f00; 
+	}
+	.form.apply label.fielderror input{
+		border: 1px solid #f00;
+	}
+
+
+
+
+
+}

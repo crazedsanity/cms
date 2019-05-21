@@ -1,0 +1,64 @@
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('.copyme').click( function(){
+			var url = $(this).attr('data-url');
+			copyToClipboard(url);
+		});
+
+		function copyToClipboard(text) {
+			window.prompt ("Copy to clipboard: Ctrl+C, Enter", text);
+		}
+	});
+</script>
+
+<p class="{mainOptionsClass}">
+	<a id="add" href="/update/pages/item.php">Add New Page</a>
+	<a id="sort" href="/update/pages/sort.php">Sort Pages</a>
+</p>
+
+<table class="listingtable">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>URL</th>
+			<th></th>
+			<th>Asset</th>
+			<th>Template</th>
+			<th>Options</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- BEGIN pageRow -->
+		<tr>
+			<td class="countme">
+				
+				<a href="{url}" target="_blank" alt="{url}" title="{url}">
+					<strong>{indent} {title}</strong> 
+					<i class="fa fa-external-link"></i>
+				</a> 
+				{sorthtml}
+				<span class="{hideSort}">- <a href="/update/pages/sort.php?parent_id={page_id}">Sort Sub Pages</a></span>
+			</td>
+			<td>
+				<i class="fa fa-clipboard copyme" data-url="{url}" alt="{url}" title="{url}"> {url}</i> 
+			</td>
+			<td><i class='{pageIcons}' title='{pageIconDescription}'></i></td>
+			<td>
+				{asset}
+			</td>
+			<td>
+				{template}
+			</td>
+			<td class="options">
+				{pageOptions}
+				<a href='/update/pages/item.php?page_id={page_id}' class="edit {hideEdit}">Edit</a>
+				<a class="{hideDelete} delete formdelete" data-id="{page_id}" href='javascript:;'>Delete</a>
+			</td>
+		</tr>
+{html_child_%%page_id%%}
+		<!-- END pageRow -->
+
+	</tbody>
+</table>
+

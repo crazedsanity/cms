@@ -1,0 +1,667 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "236faad2299d0f0374ef8360bc4410af",
+    "content-hash": "1e20365100fdcc80c86d54a7a83a8ffd",
+    "packages": [
+        {
+            "name": "crazedsanity/authtoken",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/crazedsanity/AuthToken.git",
+                "reference": "f7237064ce1ffb68439beb3ab014bef3281d8428"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/crazedsanity/AuthToken/zipball/f7237064ce1ffb68439beb3ab014bef3281d8428",
+                "reference": "f7237064ce1ffb68439beb3ab014bef3281d8428",
+                "shasum": ""
+            },
+            "require": {
+                "crazedsanity/database": "^0.4",
+                "ircmaxell/password-compat": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Falconer",
+                    "email": "github@crazedsanity.com"
+                }
+            ],
+            "description": "Library for creating and manipulating authentication/authorization tokens, for things like password hashes and API keys.",
+            "time": "2016-11-07 20:52:15"
+        },
+        {
+            "name": "crazedsanity/core",
+            "version": "v0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/crazedsanity/core.git",
+                "reference": "49560503429c9635164e13f513b2d05e3d461fd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/crazedsanity/core/zipball/49560503429c9635164e13f513b2d05e3d461fd9",
+                "reference": "49560503429c9635164e13f513b2d05e3d461fd9",
+                "shasum": ""
+            },
+            "require": {
+                "crazedsanity/version": "~0.1",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Falconer",
+                    "email": "github@crazedsanity.com",
+                    "homepage": "http://www.crazedsanity.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Core PHP libraries for all things Crazed(Sanity).",
+            "homepage": "http://www.crazedsanity.com",
+            "keywords": [
+                "dry",
+                "oaoo",
+                "php"
+            ],
+            "time": "2017-08-15 16:41:05"
+        },
+        {
+            "name": "crazedsanity/database",
+            "version": "v0.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/crazedsanity/database.git",
+                "reference": "928ed69942dc1fb925bfda12382e4feb54a57572"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/crazedsanity/database/zipball/928ed69942dc1fb925bfda12382e4feb54a57572",
+                "reference": "928ed69942dc1fb925bfda12382e4feb54a57572",
+                "shasum": ""
+            },
+            "require": {
+                "crazedsanity/core": "~0.3",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.6 || ^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Falconer",
+                    "email": "github@crazedsanity.com",
+                    "homepage": "http://www.crazedsanity.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Database abstraction library.",
+            "homepage": "http://www.crazedsanity.com",
+            "keywords": [
+                "database",
+                "dry",
+                "mysql",
+                "oaoo",
+                "pdo",
+                "php",
+                "postgres",
+                "sqlite"
+            ],
+            "time": "2017-05-02 18:51:41"
+        },
+        {
+            "name": "crazedsanity/messaging",
+            "version": "v0.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/crazedsanity/messaging.git",
+                "reference": "f6a9526b0a85c1ec0208aa3b35d514ec6ee00909"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/crazedsanity/messaging/zipball/f6a9526b0a85c1ec0208aa3b35d514ec6ee00909",
+                "reference": "f6a9526b0a85c1ec0208aa3b35d514ec6ee00909",
+                "shasum": ""
+            },
+            "require": {
+                "crazedsanity/core": "~0.3",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.6 || ^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Falconer",
+                    "email": "github@crazedsanity.com",
+                    "homepage": "http://www.crazedsanity.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Framework for storing messages in the session (alerts, notifications, etc)",
+            "keywords": [
+                "application",
+                "framework",
+                "php"
+            ],
+            "time": "2017-08-15 20:46:53"
+        },
+        {
+            "name": "crazedsanity/template",
+            "version": "v0.4.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/crazedsanity/template.git",
+                "reference": "4e0c090f19456753692293b944e6d6f3f0839165"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/crazedsanity/template/zipball/4e0c090f19456753692293b944e6d6f3f0839165",
+                "reference": "4e0c090f19456753692293b944e6d6f3f0839165",
+                "shasum": ""
+            },
+            "require": {
+                "crazedsanity/core": "~0.2",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Falconer",
+                    "email": "github@crazedsanity.com",
+                    "homepage": "http://www.crazedsanity.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Templating library.",
+            "homepage": "http://www.crazedsanity.com",
+            "keywords": [
+                "dry",
+                "oaoo",
+                "php",
+                "template"
+            ],
+            "time": "2017-08-15 16:29:11"
+        },
+        {
+            "name": "crazedsanity/version",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/crazedsanity/version.git",
+                "reference": "5ea87a726f60ba57045381995540bcb1b189e74e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/crazedsanity/version/zipball/5ea87a726f60ba57045381995540bcb1b189e74e",
+                "reference": "5ea87a726f60ba57045381995540bcb1b189e74e",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.6 || ^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Falconer",
+                    "email": "github@crazedsanity.com",
+                    "homepage": "http://www.crazedsanity.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Version parsing class, derived from cs-content, mostly SemVer compliant",
+            "homepage": "http://www.crazedsanity.com",
+            "keywords": [
+                "dry",
+                "oaoo",
+                "php"
+            ],
+            "time": "2017-08-29 19:40:27"
+        },
+        {
+            "name": "dompdf/dompdf",
+            "version": "v0.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/dompdf.git",
+                "reference": "5113accd9ae5d466077cce5208dcf3fb871bf8f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/5113accd9ae5d466077cce5208dcf3fb871bf8f6",
+                "reference": "5113accd9ae5d466077cce5208dcf3fb871bf8f6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-gd": "*",
+                "ext-mbstring": "*",
+                "phenx/php-font-lib": "0.5.*",
+                "phenx/php-svg-lib": "0.3.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dompdf\\": "src/"
+                },
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                },
+                {
+                    "name": "Brian Sweeney",
+                    "email": "eclecticgeek@gmail.com"
+                },
+                {
+                    "name": "Gabriel Bull",
+                    "email": "me@gabrielbull.com"
+                }
+            ],
+            "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+            "homepage": "https://github.com/dompdf/dompdf",
+            "time": "2017-11-26 14:49:08"
+        },
+        {
+            "name": "ircmaxell/password-compat",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ircmaxell/password_compat.git",
+                "reference": "5c5cde8822a69545767f7c7f3058cb15ff84614c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/5c5cde8822a69545767f7c7f3058cb15ff84614c",
+                "reference": "5c5cde8822a69545767f7c7f3058cb15ff84614c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/password.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Ferrara",
+                    "email": "ircmaxell@php.net",
+                    "homepage": "http://blog.ircmaxell.com"
+                }
+            ],
+            "description": "A compatibility library for the proposed simplified password hashing algorithm: https://wiki.php.net/rfc/password_hash",
+            "homepage": "https://github.com/ircmaxell/password_compat",
+            "keywords": [
+                "hashing",
+                "password"
+            ],
+            "time": "2014-11-20 16:49:30"
+        },
+        {
+            "name": "phenx/php-font-lib",
+            "version": "0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhenX/php-font-lib.git",
+                "reference": "760148820110a1ae0936e5cc35851e25a938bc97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/760148820110a1ae0936e5cc35851e25a938bc97",
+                "reference": "760148820110a1ae0936e5cc35851e25a938bc97",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FontLib\\": "src/FontLib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                }
+            ],
+            "description": "A library to read, parse, export and make subsets of different types of font files.",
+            "homepage": "https://github.com/PhenX/php-font-lib",
+            "time": "2017-09-13 16:14:37"
+        },
+        {
+            "name": "phenx/php-svg-lib",
+            "version": "v0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhenX/php-svg-lib.git",
+                "reference": "a85f7fe9fe08d093a4a8583cdd306b553ff918aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhenX/php-svg-lib/zipball/a85f7fe9fe08d093a4a8583cdd306b553ff918aa",
+                "reference": "a85f7fe9fe08d093a4a8583cdd306b553ff918aa",
+                "shasum": ""
+            },
+            "require": {
+                "sabberworm/php-css-parser": "8.1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Svg\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                }
+            ],
+            "description": "A library to read, parse and export to PDF SVG files.",
+            "homepage": "https://github.com/PhenX/php-svg-lib",
+            "time": "2017-05-24 10:07:27"
+        },
+        {
+            "name": "phpmailer/phpmailer",
+            "version": "v5.2.26",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "70362997bda4376378be7d92d81e2200550923f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/70362997bda4376378be7d92d81e2200550923f7",
+                "reference": "70362997bda4376378be7d92d81e2200550923f7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "1.2.*",
+                "jms/serializer": "0.16.*",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phpunit/phpunit": "4.8.*",
+                "symfony/debug": "2.8.*",
+                "symfony/filesystem": "2.8.*",
+                "symfony/translation": "2.8.*",
+                "symfony/yaml": "2.8.*",
+                "zendframework/zend-cache": "2.5.1",
+                "zendframework/zend-config": "2.5.1",
+                "zendframework/zend-eventmanager": "2.5.1",
+                "zendframework/zend-filter": "2.5.1",
+                "zendframework/zend-i18n": "2.5.1",
+                "zendframework/zend-json": "2.5.1",
+                "zendframework/zend-math": "2.5.1",
+                "zendframework/zend-serializer": "2.5.*",
+                "zendframework/zend-servicemanager": "2.5.*",
+                "zendframework/zend-stdlib": "2.5.1"
+            },
+            "suggest": {
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "class.phpmailer.php",
+                    "class.phpmaileroauth.php",
+                    "class.phpmaileroauthgoogle.php",
+                    "class.smtp.php",
+                    "class.pop3.php",
+                    "extras/EasyPeasyICS.php",
+                    "extras/ntlm_sasl_client.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "time": "2017-11-04 09:26:05"
+        },
+        {
+            "name": "sabberworm/php-css-parser",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
+                "reference": "850cbbcbe7fbb155387a151ea562897a67e242ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/850cbbcbe7fbb155387a151ea562897a67e242ef",
+                "reference": "850cbbcbe7fbb155387a151ea562897a67e242ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sabberworm\\CSS": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Schweikert"
+                }
+            ],
+            "description": "Parser for CSS Files written in PHP",
+            "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+            "keywords": [
+                "css",
+                "parser",
+                "stylesheet"
+            ],
+            "time": "2016-07-19 19:14:21"
+        },
+        {
+            "name": "setasign/fpdf",
+            "version": "1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Setasign/FPDF.git",
+                "reference": "2c68c9e6c034ac3187d25968790139a73184cdb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Setasign/FPDF/zipball/2c68c9e6c034ac3187d25968790139a73184cdb1",
+                "reference": "2c68c9e6c034ac3187d25968790139a73184cdb1",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "fpdf.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "no usage restriction"
+            ],
+            "authors": [
+                {
+                    "name": "Olivier Plathey",
+                    "email": "oliver@fpdf.org",
+                    "homepage": "http://fpdf.org/"
+                }
+            ],
+            "description": "FPDF is a PHP class which allows to generate PDF files with pure PHP. F from FPDF stands for Free: you may use it for any kind of usage and modify it to suit your needs.",
+            "homepage": "http://www.fpdf.org",
+            "keywords": [
+                "fpdf",
+                "pdf"
+            ],
+            "time": "2016-01-01 17:47:15"
+        },
+        {
+            "name": "weotch/phpthumb",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weotch/PHPThumb.git",
+                "reference": "f5c1d2ef2e9de3bded7483778618bf8cac2511c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/weotch/PHPThumb/zipball/f5c1d2ef2e9de3bded7483778618bf8cac2511c3",
+                "reference": "f5c1d2ef2e9de3bded7483778618bf8cac2511c3",
+                "shasum": ""
+            },
+            "replace": {
+                "dannytrue/phpthumb": "dev-master#2d8898f62e75a743e248dd5906a038d574e0dfe0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Reinhard"
+                }
+            ],
+            "description": "Fork of PHPThumb that adds auto-image rotation based on EXIF data and composer support",
+            "time": "2015-05-12 22:56:19"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

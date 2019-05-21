@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+#calcon{
+	margin:10px 0 0 20px;
+}
+
+
+.date-top {
+    font-weight: bold;
+    padding-left: 12.3em;
+    padding-right: 0.3em;
+    padding-top: 1px;
+    white-space: nowrap;
+}

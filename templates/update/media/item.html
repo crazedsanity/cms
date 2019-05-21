@@ -1,0 +1,59 @@
+<h3>{pageTitle}</h3>
+
+<form method="POST" action="/update/media/item.php" enctype="multipart/form-data">
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-1"><span>General</span></a></li>
+		</ul>
+		<div id="tab-1">
+			<span class="note">The folder, title, and filename are all purely for organizational purposes.  The actual 
+			filename is number-based, for simplicity.</span>
+			<!-- BEGIN folder -->
+			<div id='folder'>
+				<p><label>Folder Name</label> <br />
+					<input type="text" class="title" id="filename" name="filename"
+						   value="{filename}" /></p>
+				<input type="hidden" name="media_folder_id" value="{media_folder_id}" />
+				
+			</div>
+			<!-- END folder -->
+			<!-- BEGIN file -->
+			<div id="file">
+				<p><label>Folder</label> <br />
+					<select class="title" name="media_folder_id" id="media_folder_id">
+							{folderOptionList}
+					</select>
+				</p>
+
+				<p>
+					<label>Title</label> <br />
+					<input type="text" class="title" id="filename" name="filename" value="{display_filename}" />
+				</p>
+
+				<p><label>File</label> <br />
+					<input type="file" class="title" name="image" />
+					<br><br>
+
+					<a href="/data/upfiles/media/{filename}" target="_blank">
+						<!-- BEGIN image --><img src="/_elements/thumb.php?i={basename}&x=200&y=200&_={TIME}" alt="{filename}" title="{filename}" /><!-- END image -->
+						{PUBLIC_MEDIA_DIR}{filename}
+					</a>
+				</p>
+						
+				<input type="hidden" name="media_id" value="{media_id}" />
+			</div>
+			<!-- END file -->
+			{MEDIA_ACTION}
+		</div>
+	</div>
+	<input type="hidden" name="action" value="{action}" />
+	<input type="hidden" name="type" value="{type}" />
+
+	<div class="form-controls">
+		<button type="submit" class="positive">
+		<img src="/update/_elements/images/icons/tick.png" alt="" /> Save</button>
+	</div>
+	<div class="clear"></div>
+</form>
+
+

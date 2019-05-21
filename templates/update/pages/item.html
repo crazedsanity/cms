@@ -1,0 +1,244 @@
+
+<h3>{title}</h3>
+<form class="main form" method="POST" enctype="multipart/form-data">
+		<div id="tabs">
+			<ul>
+				<li><a href="#tab-general"><span>General</span></a></li>
+				<li><a href="#tab-advanced"><span>Advanced</span></a></li>
+				<li><a href="#tab-social"><span>Social</span></a></li>
+			</ul>
+			<div id="tab-general">
+				<p>
+					<label for="title">Title</label>  <br>
+					<input type="text" class="title" name="page[title]" value="{title}" id="page-title">
+						(<a href="{url}" target="_blank">{url}</a>)
+				</p>
+				<p>
+					<label for="parent_id">Parent Page</label> <br>
+					<select name="page[parent_id]" id="parent_id" class="title" style="width: 100%;">
+						<option value="0">-- Site Root --</option>
+	{pageOptions} 
+					</select>
+				</p>
+<!--				<p>
+					Homepage Hero Image - <i>At least 2500px wide by 700px tall</i><br>
+					<input type="file" class="title" id="input_heroimage" name="heroimage">
+					(<a href="{img_path}{img_filename}" target="_blank">{img_path}{img_filename}</a>) <br>
+					<img src='/_elements/thumb.php?x=500&amp;y=500&amp;i={img_filename}'>
+					<br><br><br>
+					
+				</p>-->
+				<!-- BEGIN heroImage -->
+				<p>
+					<label for="input_ogimage">Homepage Hero Image</label>  - <i>At least 2500px wide by 700px tall</i><br>
+					<input type="file" class="title" id="input_heroimage" name="heroimage">
+					(<a href="{img_path}{img_filename}" target="_blank">{img_path}{img_filename}</a>) <br>
+					<img src='/_elements/thumb.php?x=500&amp;y=500&amp;i={img_filename}'>
+					<br><br><br>
+				</p>
+				<!-- END heroImage -->
+				<div id="body_tabs" class="tabs">
+					<ul>
+						<li><a href="#body-main">Main Body</a></li>
+						<li><a href="#body-extra1">Short Description</a></li>
+						<li><a href="#body-extra2">Long Description #1</a></li>
+						<li><a href="#body-extra3">Long Description #2</a></li>
+					</ul>
+					<div id="body-main">
+						<label for="blurb">Body</label> <br>
+						<textarea id="editor_body" class="editor" cols="105" rows="60">{body}</textarea>
+					</div>
+					<div id="body-extra1">
+						<label for="blurb">Short Description</label> <br>
+						<textarea id="editor_body_extra1" class="editor" cols="105" rows="60">{body_extra1}</textarea>
+					</div>
+					<div id="body-extra2">
+						<label for="blurb">Long Description #1</label> <br>
+						<textarea id="editor_body_extra2" class="editor" cols="105" rows="60">{body_extra2}</textarea>
+					</div>
+					<div id="body-extra3">
+						<label for="blurb">Long Description #2</label> <span class="note">(Not all templates support this content section.)</span><br>
+						<textarea id="editor_body_extra3" class="editor" cols="105" rows="60">{body_extra3}</textarea>
+					</div>
+				</div>
+				<div style="width:40%;float:left;">
+					<br>
+					<label for="title">Parallax Photo 1 (choose one)</label> <br>
+					<div style="padding:20px;width:50%; background:#dedede;">
+					Current Image:<br>
+					{para1}
+					</div>
+					<br>
+					<label><input type="radio" name="page[para1]" value="bully-para.jpg"><img src="/update/_elements/img/parallax/bully-para.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para1]" value="bully-para2.jpg"><img src="/update/_elements/img/parallax/bully-para2.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para1]" value="bully-para3.jpg"><img src="/update/_elements/img/parallax/bully-para3.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para1]" value="home-hero.jpg"><img src="/update/_elements/img/parallax/home-hero.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para1]" value="imghero-inside2.jpg"><img src="/update/_elements/img/parallax/imghero-inside2.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para1]" value="imghero-inside3.jpg"><img src="/update/_elements/img/parallax/imghero-inside3.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para1]" value="imghero1.jpg"><img src="/update/_elements/img/parallax/imghero1.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para1]" value="new-img.jpg"><img src="/update/_elements/img/parallax/new-img.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para1]" value="trmf_hero.jpg"><img src="/update/_elements/img/parallax/trmf_hero.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para1]" value="trmf_hero2.jpg"><img src="/update/_elements/img/parallax/trmf_hero2.jpg" style="margin-left:10px;" alt=""></label>
+					<br>
+				</div>
+				<div style="width:40%;float:left;">
+
+					<label for="title">Parallax Photo 2 (choose one)</label> <br>
+
+					<div style="padding:20px;width:50%; background:#dedede;">
+						Current Image:<br>
+						{para2}
+					</div>
+					<br>
+					<label><input type="radio" name="page[para2]" value="bully-para.jpg"><img src="/update/_elements/img/parallax/bully-para.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para2]" value="bully-para2.jpg"><img src="/update/_elements/img/parallax/bully-para2.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para2]" value="bully-para3.jpg"><img src="/update/_elements/img/parallax/bully-para3.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para2]" value="home-hero.jpg"><img src="/update/_elements/img/parallax/home-hero.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para2]" value="imghero-inside2.jpg"><img src="/update/_elements/img/parallax/imghero-inside2.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para2]" value="imghero-inside3.jpg"><img src="/update/_elements/img/parallax/imghero-inside3.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para2]" value="imghero1.jpg"><img src="/update/_elements/img/parallax/imghero1.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para2]" value="new-img.jpg"><img src="/update/_elements/img/parallax/new-img.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para2]" value="trmf_hero.jpg"><img src="/update/_elements/img/parallax/trmf_hero.jpg" style="margin-left:10px;" alt=""></label>
+					<br><br>
+					<label><input type="radio" name="page[para2]" value="trmf_hero2.jpg"><img src="/update/_elements/img/parallax/trmf_hero2.jpg" style="margin-left:10px;" alt=""></label>
+					<br>
+				</div>
+				<div style="clear:left;"></div>
+			</div>
+			<div id="tab-advanced">
+				<p>
+					<label>URL</label> <br>
+					<input type="text" class="title" name="page[url]" value="{url}" id="page-url" data-original-url="{url}" placeholder="{url}"> <br>
+						(<a href="{url}" target="_blank">{url}</a>)
+				</p>
+				<p>
+					<label for="title">Redirect</label> <br>
+					<i>If used, page is a placeholder, users are redirected to the url below.</i> <br>
+					<input type="text" class="title" name="page[redirect]" value="{redirect}">
+				</p>
+				<p>
+					<label for="title">Status</label> <br>
+					<select class="title" name="page[status]" >
+	{statusOptionsList}
+					</select>
+				</p>
+				<table>
+					<tr>
+						<td>
+							<p>
+								<label for="title">Site Asset</label> <br>
+								<i>What else will be displayed on the page.</i> <br>
+								<select class="title" name="page[asset]" >
+									<option value="">No Asset</option>
+				{siteAssetOptionList}
+								</select>
+							</p>
+						</td>
+						<td>
+							<p class="{assetValueClass}">
+								<label for="title">Asset Argument</label> <br>
+								<i>This is a special setting, specific to the given asset.  Not all assets require a value here. It may be necessary to consult a developer or look at the asset for more information on what's required here.</i><br>
+								<input type="text" class="title" name="page[asset_argument]" value="{asset_argument}"
+							</p>
+						</td>
+					</tr>
+					
+				</table>
+				<p>
+					<label for="title">Restrict Access to Group</label> <br>
+					<i>Required group membership to access this page (applies to sub-pages as well)</i> <br>
+					<select class="title" name="page[required_group_id]" {requiredGroupDisabled}>
+						<option value="">Not restricted</option>
+	{requiredGroupOptionList}
+					</select><i >{parentGroupInfo}</i>
+				</p>
+				<p>
+					<label for="template">Template</label> <br>
+					<i>Specifies what template to use (instead of default).  Changing this could break the page.</i> <br>
+					<input type="text" class="title" value="{template}" name="page[template]">
+				</p>
+				<p>
+					<label for="title">Keywords</label> <br>
+					<i>Search engine keywords.</i> <br>
+					<input type="text" class="title" style="width: 665px;" name="page[keywords]" value="{keywords}">
+				</p>
+				<p>
+					<label for="title">Description</label> <br>
+					<i>Search engine description.</i> <br>
+					<textarea class="title" cols="105" rows="40" name="page[description]">{description}</textarea>
+				</p>
+			</div>
+
+			<div id="tab-social">
+				<p>
+					<label for="title">OG Title</label> <br>
+					<i>Open graph title</i> <br>
+					<input type="text" class="title" style="width: 665px;" name="page[og_title]" value="{og_title}">
+				</p>
+
+	{adminMediaInput_ogimage}
+
+
+				<p>
+					<label for="title">OG Description</label> <br>
+					<i>Open graph description.</i> <br>
+					<textarea class="title" cols="105" rows="40" name="page[og_description]">{og_description}</textarea>
+				</p>
+
+
+
+			</div>
+		</div>
+		<input type="hidden" name="page_id" value="{page_id}">
+		<input type="hidden" name="page[body]" id="encoded_editor_body" value="">
+		<input type="hidden" name="page[body_extra1]" id="encoded_editor_body_extra1" value="">
+		<input type="hidden" name="page[body_extra2]" id="encoded_editor_body_extra2" value="">
+		<input type="hidden" name="page[body_extra3]" id="encoded_editor_body_extra3" value="">
+			<div class="form-controls">
+				<button type="submit" class="positive"><img src="/update/_elements/images/icons/tick.png" alt=""> Save</button>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</form>
+
+<script>
+	$(document).ready(function(){
+		$("#body_tabs.tabs").tabs();
+		$(".editor").ckeditor();
+	});
+	
+	$("form.main.form").submit(function(){
+		console.log("submitting");
+		return doEncode();
+		
+	});
+	
+	function doEncode() {
+		console.log("starting encodding");
+		$(".editor, textarea.encode").each(function() {
+			var theVal = btoa($(this).val());
+			var id = $(this).attr("id");
+			console.log("encoding id=("+id+"), value:: "+ theVal);
+			var eId = "encoded_"+ id;
+			$("#"+eId).val(theVal);
+		});
+		return true;
+	}
+</script>

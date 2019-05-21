@@ -1,0 +1,13 @@
+<?php
+
+
+namespace cms;
+
+class tag extends \cms\cms\core\core {
+	
+	public function __construct(\crazedsanity\database\Database $db) {
+		parent::__construct($db, 'tags', 'tag_id');
+	}
+	
+	
+}

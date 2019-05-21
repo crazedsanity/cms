@@ -1,0 +1,76 @@
+
+    <script src="{ADMIN_URL}/_elements/js/datepair/lib/site.js"></script>
+
+
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$("input.time").timepicker({
+			'showDuration':	true,
+			'step':			15,
+			'timeFormat':	'g:ia'
+		});
+		$("input.date").datepicker({
+			dateFormat:		'yy-mm-dd',
+			todayHighlight:	true,
+			autoclose:		true
+		});
+		
+		//initialize the pair.
+//		var theDatePair = document.getElementById('datepair');
+//		var DPObject = new Datepair(theDatePair);
+		$(".datepair").datepair();
+	});
+</script>
+
+<h3>{title}</h3>
+<form method="POST" enctype="multipart/form-data">
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-1"><span>General</span></a></li>
+		</ul>
+		<div id="tab-1">
+			<p>
+				<label for="news[approved]">Approved</label><br>
+				<select class="title" name="news[approved]">
+{approvedOptionList}
+				</select>
+			</p>
+			<p>
+				<label for="title">Title</label><br>
+				<input type="text" class="title" name="news[title]" value="{title}">
+			</p>
+			<p>
+				<label for="title">Byline</label><br>
+				<input type="text" class="title" name="news[byline]" value="{byline}">
+			</p>
+			<p>
+				<label for="news[approved]">Show On Home Page</label><br>
+				<select class="title" name="news[front_page]">
+{frontPageOptionList}
+				</select>
+			</p>
+			<p id="datepair">
+				<label>Start Date</label><br>
+				<input type="text" class="title date start" name="news[start_date]" value="{start_date}">
+				<input type="text" class="title time start" name="news[start_time]" value="{start_time}"><br />
+
+				<label>End Date</label><br>
+				<input type="text" class="title date end" name="news[end_date]" value="{end_date}">
+				<input type="text" class="title time end" name="news[end_time]" value="{end_time}">
+			</p>
+{adminMediaInput}
+			<p class="h200"><label for="blurb">Description</label> <br>
+				<textarea name="news[description]" class="editor" id="editor" cols="105" rows="20">{description}</textarea>
+			</p>
+		</div>
+	</div>
+	<input type="hidden" name="news_id" value="{news_id}">
+	<input type="hidden" name="news[media_id]" value='{media_id}'>
+	<div class="form-controls">
+		<button type="submit" class="positive"><img src="{ADMIN_URL}/_elements/images/icons/tick.png" alt=""> Save</button>
+	</div>
+	<div class="clear"></div>
+</form>
+	

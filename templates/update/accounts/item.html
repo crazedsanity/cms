@@ -1,0 +1,52 @@
+
+<form method="POST" enctype="multipart/form-data">
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-1"><span>General</span></a></li>
+			<li><a href="#tab-2"><span>Groups</span></a></li>
+		</ul>
+		<div id="tab-1">
+			<p>
+				<label for="name">Name</label> <br>
+				<input type="text" class="title" name="admin[name]" value="{name}" required>
+			</p>
+			<p>
+				<label for="company">Company</label> <br>
+				<input type="text" class="title" name="admin[company]" value="{company}" required>
+			</p>
+			<p>
+				<label for="email">Email</label> <br>
+				<input type="email" class="title" name="admin[email]" value="{email}">
+			</p>
+			<p>
+				<label for="username">Username</label> <br>
+				<input type="text" class="title" name="admin[username]" value="{username}" required>
+			</p>
+			<p>
+				<label for="password">Password</label> <br>
+				<input type="password" class="title" name="admin[password]" value="{password}" autocomplete="off">
+			</p>
+			<p>
+				<label for="password2">Verify Password</label> <br>
+				<input type="password" class="title" name="admin[password2]" value="" autocomplete="off">
+			</p>
+			<p>
+				<label for="is_active">Is Active?</label> 
+				<input type="checkbox" class="title" name="admin[is_active]" {isActive_checked}>
+			</p>
+		</div>
+		<div id="tab-2">
+			<!-- BEGIN group -->
+			<label>
+				<input type="checkbox" name="groups[]" value="{group_id}"{selectedText}>{name}<br>
+			</label>  
+			<!-- END group -->
+		</div>
+	</div>
+	<input type="hidden" name="user_id" value="{user_id}">
+	<div class="form-controls">
+		<button type="submit" class="positive"><img src="/update/_elements/images/icons/tick.png" alt=""> Save</button>
+		<a href="{SECTION_URL}" class='negative button'><img src="/update/_elements/images/icons/cross.png" alt="">Cancel</a>
+	</div>
+	<div class="clear"></div>
+</form>

@@ -1,0 +1,49 @@
+
+	<script>
+		$(document).ready(function() {
+			$('#add').button({ icons: { primary: "ui-icon-plus" } });
+			$('#sort').button({ icons: { primary: "ui-icon-carat-2-n-s" } });
+			$('#photo_sort').button({ icons: { primary: "ui-icon-carat-2-n-s" } });
+		});
+	</script>
+	<p>
+		<!-- BEGIN hasAdd -->
+			<a href="/update/galleries/item.php" id="add">Create Gallery &rsaquo;</a>
+            <a href="/update/galleries/sort.php" id="sort">Sort Galleries &rsaquo;</a>
+            <a href="/update/galleries/photo_sort.php" id="photo_sort">Sort Photos &rsaquo;</a>
+		<!-- END hasAdd -->
+		<a onclick="$('#delete form').submit();" href="javascript:;">Test</a>
+	</p>
+	<div id="accordion">
+	<!-- BEGIN galleryRow -->
+		<h3>{name}
+			<!-- BEGIN deleteGallery --><a data-id="{gallery_id}" data-keyname="gallery_id" data-type="gallery" class="formdelete" href="javascript:;">Delete</a><!-- END deleteGallery -->
+			<!-- BEGIN editGallery --><a href="{SECTION_URL}/item.php?gallery_id={gallery_id}">Edit</a><!-- END editGallery -->
+			<!-- BEGIN addPhoto --><a href="{SECTION_URL}/photos/item.php?gallery_id={gallery_id}">Add Photo</a><!-- END addPhoto -->
+		</h3>
+		<div>
+			<!-- BEGIN photoRow -->
+			<div class="row {hoverClass} mediaRow mediaPreview image" id="row{gallery_photo_id}">
+				<span></span>
+				<a href="/data/upfiles/media/{filename}" target="_blank">{photo_name}</a>
+				<div class="preview row{gallery_photo_id}"></div>
+				<div class="controls">
+						<a href="{SECTION_URL}/photos/item.php?gallery_id={gallery_id}&amp;gallery_photo_id={gallery_photo_id}">Edit</a>
+						<a data-id="{gallery_photo_id}" data-keyname="gallery_photo_id" data-type="gallery_photo" class="formdelete" href="javascript:;">Delete</a>
+				</div>
+			</div>
+			<!-- END photoRow -->
+		</div>
+		<!-- END galleryRow -->
+	</div>
+	
+<script type="text/javascript">
+	$(function() {
+		$( "#accordion" ).accordion( { heightStyle: "content", collapsible: true } );
+		
+		// this must NOT activate on the delete links or it'll stop it from functioning.
+		$( "#accordion h3 a" ).not(".formdelete").click(function (i) {
+			window.location = $(this).attr('href');
+		});
+	});
+</script>

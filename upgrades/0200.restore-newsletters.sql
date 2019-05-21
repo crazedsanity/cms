@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 5.7.21, for Linux (x86_64)
+--
+-- Host: localhost    Database: BACKUP_medora
+-- ------------------------------------------------------
+-- Server version	5.7.21-0ubuntu0.16.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `newsletters`
+--
+
+DROP TABLE IF EXISTS `newsletters`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `newsletters` (
+  `newsletter_id` int(10) NOT NULL AUTO_INCREMENT,
+  `media_id` int(10) NOT NULL DEFAULT '0',
+  `title` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  PRIMARY KEY (`newsletter_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `newsletters`
+--
+
+LOCK TABLES `newsletters` WRITE;
+/*!40000 ALTER TABLE `newsletters` DISABLE KEYS */;
+INSERT INTO `newsletters` VALUES (2,1384,'2011 Winter','0000-00-00'),(3,1396,'2006 May','0000-00-00'),(4,1401,'2007 May','0000-00-00'),(5,1398,'2008 May','0000-00-00'),(6,1402,'2009 May','0000-00-00'),(7,1400,'2010 Mid Winter','0000-00-00'),(8,1403,'2005 November','0000-00-00'),(9,1404,'2006 November','0000-00-00'),(10,1405,'2007 November','0000-00-00'),(11,1406,'2008 November','0000-00-00'),(14,1751,'2012 Fall','0000-00-00'),(15,1752,'2013 Fall','0000-00-00'),(16,1753,'2011-2012 Fall/Winter','0000-00-00'),(20,1757,'2012 Spring','0000-00-00'),(19,1756,'2011 Mid Winter','0000-00-00'),(21,1758,'2013 Spring','0000-00-00'),(22,1759,'2011 Spring-Summer','0000-00-00'),(23,1760,'2012 Summer','0000-00-00'),(28,1765,'2013 Summer','0000-00-00'),(26,1763,'2012-2013 Winter','0000-00-00'),(27,1764,'2013 Winter','2013-12-01'),(29,2486,'2015 Winter','2015-12-15'),(30,2487,'2015 Fall','2015-12-15'),(31,2488,'2015 Summer','2015-12-15'),(32,2489,'2015 Spring','2015-12-15'),(33,2714,'Spring 2016','2016-03-17'),(34,2958,'Summer 2016 ','2016-06-15'),(35,3015,'Annual Report - 1/31/16','2016-03-05'),(36,3505,'2017 Spring','2017-07-03'),(37,3506,'2017 Summer','2017-07-03'),(38,3570,'Annual Report - 1/31/17','2017-02-04'),(39,3571,'Fall 2016','2016-09-03'),(40,3671,'2017 Fall ','2017-11-17');
+/*!40000 ALTER TABLE `newsletters` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-03-02  9:46:39

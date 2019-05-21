@@ -1,0 +1,160 @@
+form#filter{
+background: #ccc;
+padding: 12px;
+width: 100%;
+}
+form#filter select{
+width: 75%;
+padding: 6px;
+font-size: 15px;
+}
+form#filter #submit{
+font-size: 15px;
+height: 40px;
+width:20%;
+}
+
+.businessrow{
+background: #ddd;
+padding: 6px;
+}
+.businessrow.odd{
+background:#eee;
+}
+.businessrow .info{
+float:left;
+max-width: 60%;
+margin: 0 0 0 12px;
+font-size: 13px;
+}
+.businessrow .distance{
+float: right;
+text-align: right;
+}
+.businessrow .image{
+float:left;
+padding: 0 0 0 0;
+width:75px;
+}
+
+.businessrow h5{
+margin:0;
+
+}
+.businessrow .info a{
+color: #562545;
+}
+.businessrow .distance{
+float: right;
+font-size: 13px;
+}
+.business{
+width: 100%;
+padding: 24px 0 24px 0;
+float: left;
+}
+.business .info{
+margin: 0 auto;
+width: 90%;
+}
+.business .image{
+float: left;
+padding: 0 6px 6px 0;
+}
+.business .buttons{
+clear: both;
+width: 100%;
+float: left;
+margin: 12px 0;
+}
+.business .buttons a{
+width: 23%;
+margin: 0 4.5%;
+float: left;
+display: block;
+padding: 12px 0;
+text-align: center;
+background: #660066;
+color: #fff;
+border: 1px solid #aaa;
+font-size: 12px;
+}
+.business .social{
+text-align: center;
+margin: 12px auto;
+clear:both;
+}
+
+.business .social a{
+margin: 0 6px 6px 6px;
+float: left;
+}
+.business .social .foursquare{
+float: left;
+}
+.changelocation{
+width: 90%;
+margin: 0 auto;
+}
+.changelocation #detectlocation{
+width: 100%;
+padding: 12px;
+font-size:18px;
+margin: 12px 0 0 0;
+}
+.changelocation #setlocation{
+width: 100%;
+padding: 12px;
+font-size:18px;
+margin: 12px 0 0 0;
+}
+.field{
+width: 100%;
+padding: 0 0 6px 0;
+}
+.field span{
+display: block;
+width: 25%;
+float: left;
+padding: 0 0 0 1%;
+}
+.field label input, .field label select{
+width: 71%;
+font-size: 21px;
+padding: 3px;
+}
+.field label select{
+width: 71.85%;
+}
+.businessrow.event .date{
+float: right;
+}
+.pagination{
+width: 100%;
+clear: both;
+}
+.pagination a{
+width: 39%;
+margin: 12px 5% 0 5%;
+display: block;
+float: left;
+background: #333;
+border: 1px solid #666;
+padding: 6px 0;
+text-align: center;
+color: #f90;
+}
+.pagination a.next{
+float: right;
+}
+.business.event h4{
+color: #562545;
+}
+.business.event .buttons a{
+clear: both;
+width: 89%;
+margin: 12px 5%;
+}
+.business.event .info p.address{
+float: left;
+}

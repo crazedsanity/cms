@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="/update/_elements/css/reset.css" rel="stylesheet" type="text/css">
+		<link href="/update/_elements/css/style.css" rel="stylesheet" type="text/css">
+		<link href="/update/_elements/css/buttons.css" rel="stylesheet" type="text/css">
+		<link href="/update/_elements/css/forms.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<link rel='stylesheet' type='text/css' href='/_elements/js/jquery-ui/css/mark-custom/jquery-ui-1.10.3.custom.css'>
+
+		<script type="text/javascript" src="/update/_elements/js/functions.js"></script>
+
+		<title>{TITLE_DIVIDE}Administrative Area</title>
+	</head>
+	<body>
+		<div id="wrap_l">
+			<div id="header">
+				<a href="/{logoLink}">
+					<img src="/update/_elements/images/logo.png" alt="Administrative Area" border="0" />
+				</a>
+			</div><!-- end header -->
+					{ALERT}
+			<!-- BEGIN loginContent -->
+			<div id="cont">
+				<div id="main_login">
+					<form action="{loginFormAction}" method="post"
+						  id="form1" class="login">
+						<p>
+							<label>
+								Username<br />
+								<input type="text" class="title" name="usrname" id="usrname" value="" required />
+							</label>
+						</p>
+						<p>
+							<label>
+								Password<br />
+								<input type="password" name="passwrd" class="title" id="passwrd" value="" required />
+							</label>
+						</p>
+						<p>
+
+						<input type="hidden" id="accesscheck" name="accesscheck" value="{accesscheck}">
+							<input type="submit" name="login" id="login" value="Login" /></p>
+					</form>
+				</div>
+				<!-- end main_login --></div>
+			<!-- END loginContent -->
+			<!-- end cont -->
+			<div id="footer">&copy; KK BOLD</div>
+		</div>
+		<!-- end wrap_ -->
+	</body>
+</html>

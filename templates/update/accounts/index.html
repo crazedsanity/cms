@@ -1,0 +1,75 @@
+
+
+
+	<p class="{addNewAccountLink}"><a href="/update/accounts/item.php" id="add" class="add">Add New Account</a></p>
+	
+	<div>
+		<!-- BEGIN group -->
+		<div><h3 style="display:inline; padding-right: 25px;">{group_name}</h3><span style="font-style: italic;">{group_description}</span></div>
+		<div>
+			
+			<table class="listingtable" border="1">
+				<thead>
+					<tr>
+						<th>Username</th>
+						<th>Real Name</th>
+						<th>Company</th>
+						<th>Options</th>
+					</tr>
+				</thead>
+				<tbody>
+				<!-- BEGIN user -->
+					<tr class="useractive{is_active}">
+						<td>{username}</td>
+						<td>{name}</td>
+						<td>{company}</td>
+						<td>
+							<a href="/update/accounts/item.php?user_id={user_id}" class="edit">Edit</a>
+							<a href="javascript:;" class="{rowDeleteClass} formdelete delete" data-id="{user_id}">Delete</a>
+						</td>
+					</tr>
+				<!-- END user -->
+				</tbody>
+			</table>
+			
+		</div>
+		<!-- END group -->
+			
+	</div>
+	
+	<script type="text/javascript" src="/_elements/components/jquery.cookie/jquery.cookie.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var act = 0;
+            $( "#accordion" ).accordion({
+				heightStyle: "content",
+				collapsible: true,
+                create: function(event, ui) {
+					console.log("accordion created");
+                    //get index in cookie on accordion create event
+                    if(typeof parseInt($.cookie('saved_index')) === 'number'){
+                       act =  parseInt($.cookie('saved_index'));
+                    }
+					else {
+						cookie('saved_index', 0);
+					}
+                },
+                activate: function(event, ui) {
+					console.log("accordion updated");
+                    //set cookie for current index on change event
+                    $.cookie('saved_index', null);
+					console.log(ui.newPanel.attr('id'));
+					console.log($(this).accordion("option", "active"));
+                    $.cookie('saved_index', $(this).accordion("option", "active"));
+//					console.log("active_index: "+ ui.options.active);
+                },
+                active: act
+            });
+		});
+	</script>
+	<style>
+		tr.useractive0 td {
+			color: red;
+			font-weight: bold;
+		}
+	</style>

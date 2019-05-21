@@ -1,0 +1,205 @@
+input.form-style, select.form-style {
+	border: 2px solid #FDBF77;
+    border-radius: 10px 10px 10px 10px;
+	padding: 10px;
+	width: 325px;
+	font-family: "chaparral-pro-n6", "chaparral-pro",sans-serif;
+}
+
+input.form-btn {
+	font-family: "chaparral-pro-n6", "chaparral-pro",sans-serif;
+	color: #392210;
+	font-size: 14px;
+    font-weight: 700;
+	text-transform: uppercase;
+	background: url(/_elements/img/btn-employment.jpg) no-repeat;
+	width: 116px;
+	height: 30px;
+	border: 0;
+	cursor: pointer;
+}
+
+/*contact form styles*/
+form.contact label span {width: 100%; float: left;}
+form.contact input.form-style {
+	border: 2px solid #FDBF77;
+    border-radius: 10px 10px 10px 10px;
+	padding: 10px;
+	width: 300px;
+	margin-bottom: 5px;
+	font-family: "chaparral-pro-n6", "chaparral-pro",sans-serif;
+}
+
+form.contact textarea.form-style {
+	border: 2px solid #FDBF77;
+    border-radius: 10px 10px 10px 10px;
+	padding: 10px;
+	height: 200px;
+	font-family: "chaparral-pro-n6", "chaparral-pro",sans-serif;
+	width: 300px;
+}
+
+
+
+/*form.form label {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 120%;
+	margin:8px 0px;
+}
+form.form label.checkbox_option {
+	font-weight: normal;
+	display:inline;
+	width: auto;
+}
+form.form label.checkbox_option input {
+	width: auto;
+	margin: 3px 12px;
+}
+form.form {
+	margin: 0 12px;
+}
+.form input.title {
+	width: 210px;
+}
+.form .title {
+	padding: 3px;
+	font-size: 18px;
+	border: 1px solid #999;
+}
+.form .title:focus {
+	border: 1px solid #000;
+}
+.form .title.address {
+	width: 400px;
+}
+.form .title.acres {
+	width: 100px;
+}
+.form .title.comments {
+	width: 99%;
+}
+form.form textarea {
+	width: 50%;
+	font-size: 12px;
+	font-family:myriad-pro, Verdana, Geneva, sans-serif;
+	min-height: 150px;
+}
+form.form input[type=submit] {
+	border: 1px solid #2d5777;
+background: #003062;
+padding: 8px 10px;
+margin: 6px 6px 24px 0px;
+cursor:pointer;
+color: #fff;
+font-size:12px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+form.form input[type=submit]:hover, form.form input[type=submit]:active {
+	border: 1px solid #29435b;
+color: #000;
+background:#52c4fd;
+color: #fff;
+}
+form.form input {
+	padding: 6px;
+	border: 1px solid #ccc;
+	color: #333;
+	font-size: 14px;
+}
+form.form input:focus, form.form select:focus {
+	border: 1px solid #999;
+}
+form.form select {
+	border: 1px solid #ccc;
+	color: #333;
+	padding: 3px;
+	width: 125px;
+	font-size: 14px;
+}
+form.form select:focus {
+}
+form.form select option {
+	padding: 3px;
+	padding-bottom: 0;
+}
+.form .row {
+	width: 100%;
+	float: left;
+	margin: 0 0 12px 0;
+}
+.form .row .field {
+	width: 50%;
+	float: left;
+	margin: 0 0 6px 0;
+}
+.form .row .field label span {
+	display: block;
+}
+.form .row .field label input {
+}
+.form .field input, .form .field select {
+	width: 250px;
+	max-width: 90%;
+}
+.form .row .field.address {
+	width: 100%;
+}
+.form .row .field.address input {
+	width: 530px;
+	max-width: 100%;
+}
+.form .row .field.city {
+	width: 40%;
+}
+.form .row .field.state {
+	width: 30%;
+}
+.form .row .field.zip {
+	width: 30%;
+}
+.form .row .field.zip input {
+	width: 138px;
+}
+.form .row .field.hphone {
+	width: 100%;
+}
+.form .row .field.hphone input {
+	width: 530px;
+	max-width: 100%;
+}
+.form .row .field.email {
+	width: 100%;
+}
+.form .row .field.email input {
+	width: 530px;
+	max-width: 100%;
+}
+.form .row .field.subscribe {
+	width: 100%;
+}
+.form .row .field.subscribe span {
+	display: inline;
+}
+.form .row .field.subscribe input {
+	width: auto;
+}
+.form .row .field.comments {
+	width: 100%;
+}
+.form .row .field.comments textarea {
+	width: 538px;
+}
+.form .row .field.info label {
+	clear: both;
+	display: block;
+	margin: 6px 0;
+}
+.form .row .field.info input {
+	width: auto;
+	margin: 0 6px 0 12px;
+}
+
+*/
+

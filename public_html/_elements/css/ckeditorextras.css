@@ -1,0 +1,5 @@
+/*Insert any additional styles needed to make CK Editor */
+html, body, #wrapper, #content, #iewrap{
+	background:none;
+	text-align:left;
+}

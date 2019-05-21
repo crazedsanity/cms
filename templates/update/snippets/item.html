@@ -1,0 +1,33 @@
+
+
+<h3>{title}</h3>
+<form method="POST" enctype="multipart/form-data">
+		<div id="tabs">
+			<ul>
+				<li><a href="#tab-general"><span>General</span></a></li>
+			</ul>
+			<div id="tab-general">
+				<p>
+					<label>Code</label> <br>
+					<input type="text" name="snippet[code]" value="{code}" required>
+				</p>
+				<p>
+					<label for="title">Description</label>  
+					<span class="note"><i>The description is purely so you understand 
+							what the purpose of this snippet is; it is not displayed anywhere else.</i></span><br>
+					<input style="width:95%" type="text" class="title" name="snippet[description]" value="{description}" required>
+				</p>
+				<p>
+					<label for="blurb">Body</label> <br>
+					<textarea name="snippet[body]" cols="105" rows="60">{body}</textarea>
+				</p>
+			</div>
+		<input type="hidden" name="snippet_id" value="{snippet_id}">
+			<div class="form-controls">
+				<input type="hidden" name="action" value="{action}">
+				<button type="submit" class="positive"><img src="/update/_elements/images/icons/tick.png" alt=""> Save</button>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</form>
+					

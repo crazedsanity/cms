@@ -1,0 +1,64 @@
+
+<style>
+	p.validation, span.validation {
+		font-weight: bold;
+	}
+	p.validation.successmessage {
+		color: green;
+	}
+	p.validation.errormessage, span.validation {
+		color: red;
+	}
+	span.validation {
+		padding-left: 10px;
+		font-size: 70%;
+	}
+</style>
+
+<!-- BEGIN message --><p class="{type}message validation">{messageContents}</p><!-- END message -->
+
+<h3 class="headline" id="contact_header">GENERAL INFORMATION REQUIRED</h3>
+
+<!-- BEGIN contactform -->
+<div class="col-md-6">
+    <form name="contact_us" action="{REQUEST_URI}" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="unique" value="{unique}">
+        <div class="form-group">
+            <label for="first_name">First Name*<span class="validation">{first_name_validation}</span></label>
+            <input type="text" class="form-control" name="contact[first_name]" placeholder="First Name" value="{first_name}" required>
+        </div>
+
+		<div class="form-group">
+            <label for="last_name">Last Name<span class="validation">{last_name_validation}</span></label>
+            <input type="text" class="form-control" name="contact[last_name]" value="{last_name}" placeholder="Last Name" required>
+        </div>
+
+		<div class="form-group">
+            <label for="company">Company<span class="validation">{company_validation}</span></label>
+            <input type="text" class="form-control" name="contact[company]" value="{company}" placeholder="Company" required>
+        </div>
+
+		<div class="form-group">
+            <label for="phone">Phone<span class="validation">{phone_validation}</span></label>
+            <input type="text" class="form-control" name="contact[phone]" value="{phone}" placeholder="(555) 555-5555" required>
+        </div>
+
+
+		<div class="form-group">
+            <label for="email">Email*<span class="validation">{email_validation}</span></label>
+            <input type="text" class="form-control" name="contact[email]" value="{email}" placeholder="Email required">
+        </div>
+
+
+		<div class="form-group">
+			<label for="comments">Comments*<span class="validation">{comments_validation}</span></label>
+			<textarea class="form-control" rows="5" name="contact[comments]">{comments}</textarea>
+		</div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>&nbsp;&nbsp;*indicates required fields
+
+    </form>
+   
+</div>
+<!-- END contactform -->
+

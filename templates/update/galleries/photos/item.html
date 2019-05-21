@@ -1,0 +1,74 @@
+
+
+	<script type="text/javascript" src="/_elements/components/uploadify/jquery.uploadify.min.js?_={TIME}"></script>
+<h3>{title}</h3>
+	<form method="POST" enctype="multipart/form-data">
+		<div id="tabs">
+			<ul>
+				<li><a href="#tab-1"><span>General</span></a></li>
+				<!--<li><a href="#tab-2"><span>Add Multiple</span></a></li>-->
+			</ul>
+			<div id="tab-1">
+				<p>
+					<label for="title">Name</label> <br>
+					<input type="text" class="title" name="gallery_photo[name]" value="{photo_name}">
+				</p>
+				<p>
+					<label for="title">Gallery</label> <br>
+					<select class="title" name="gallery_photo[gallery_id]">
+						<option>Please Select</option>
+{galleriesOptionList}
+					</select>
+				</p>
+				<p>
+					<label for="title">File</label> <br>
+					<input type="file" class="title" name="image">
+					{fileLink}
+	            </p>
+	            <p class="h200">
+					<label for="blurb">Description</label> <br>
+					<textarea name="gallery_photo[description]" class="editor" id="editor" cols="105" rows="20">
+					{description}</textarea>
+	            </p>
+			</div>
+
+<!--			<div id="tab-2">
+				<p>Photos will be added to the gallery: <b>{safeName}</b></p>
+
+
+
+				<div id="fileQueue"></div>
+				<input id="Filedata" name="Filedata" type="file">
+
+			</div>
+			
+
+			<script type="text/javascript">
+				function uploadsComplete(eventObj, qid, fileObj, response, data) {
+					alert(response);
+				}
+				$('#Filedata').uploadify({
+					'uploader': '/_elements/components/uploadify/scripts/uploadify.swf',
+					'script': '/update/galleries/photos/addmultiple.php',
+					'cancelImg': '/_elements/components/uploadify/cancel.png',
+					'folder': '/data/upfiles/media',
+					'queueID': 'fileQueue',
+					'auto': true,
+					'multi': true,
+					'queueSizeLimit': 1000,
+	//	'onComplete': uploadsComplete,
+					'scriptData': {'gallery_id': '{gallery_id}'},
+					'onError': function (d) {
+						alert("Error: " + d.type + "<br>Info: " + d.info);
+					}
+				});
+			</script>-->
+
+		</div>
+		<input type="hidden" name="gallery_photo_id" value="{gallery_photo_id}">
+		<input type="hidden" name="media_id" value="{media_id}">
+		<div class="form-controls">
+			<button type="submit" class="positive"><img src="/update/_elements/images/icons/tick.png" alt=""> Save</button>
+		</div>
+		<div class="clear"></div>
+	</form>

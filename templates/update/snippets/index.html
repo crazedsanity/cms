@@ -1,0 +1,31 @@
+
+
+<p class="{mainOptionsClass}">
+	<a id="add" href="/update/snippets/item.php?action=add">Add New Snippet</a>
+</p>
+
+<table class="listingtable">
+	<thead>
+		<tr>
+			<th>code</th>
+			<th>description</th>
+			<th>Options</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- BEGIN row -->
+		<tr>
+			<td><strong>{code}</strong></td>
+			<td>
+				<i>{description}</i> 
+			</td>
+			<td>
+				<a href='/update/snippets/item.php?action=edit&snippet_id={snippet_id}' class="edit {hideEdit}">Edit</a>
+				<a class="{hideDelete} delete formdelete" data-id="{snippet_id}" href='javascript:;'>Delete</a>
+			</td>
+		</tr>
+		<!-- END row -->
+
+	</tbody>
+</table>
+

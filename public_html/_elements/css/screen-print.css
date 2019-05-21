@@ -1,0 +1,149 @@
+/* CSS Document */
+
+body {
+	text-align: center;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+	line-height: 160%;
+}
+body.home {
+	max-height: 100%;
+	overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #333;
+	font-family: Verdana, Arial, sans-serif;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	padding: 0 0 6px 6px;
+	line-height: 120%;
+}
+h1 {
+	font-size: 2.65em;
+	margin: 9px 0 0px 3px;
+}
+h2 {
+	font-size: 2.35em;
+	margin: 9px 0 0px 3px;
+}
+h3 {
+	font-size: 2.1em;
+	margin: 6px 0 0px 3px;
+}
+h4 {
+	font-size: 1.85em;
+	margin: 6px 0 0px 3px;
+}
+h5 {
+	font-size: 1.6em;
+	margin: 3px 0 0px 3px;
+}
+h6 {
+	font-size: 1.35em;
+	margin: 3px 0 3px 3px;
+}
+blockquote {
+	margin: 24px 48px;
+	padding: 0 0;
+	line-height: 120%;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+ol, ul {
+	margin: 12px 0;
+}
+ol li {
+	padding: 0 0 3px 24px;
+	list-style: decimal;
+	list-style-position: inside;
+}
+ul li {
+	padding: 0 0 3px 24px;
+	list-style: disc;
+	list-style-position: inside;
+}
+p {
+	line-height: 160%;
+	font-size: 1em;
+	padding: 6px;
+}
+.errormsg {
+	color: red;
+	font-weight: bold;
+	margin: 0 auto;
+	width: 400px;
+	border: 1px solid #ccc;
+	background: #eee;
+	text-align: center;
+}
+.successmsg {
+	color: green;
+	font-weight: bold;
+	width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	background: #eee;
+	text-align: center;
+}
+.labelerror {
+	color: #f00;
+}
+a:visited, a:hover, a:link, a:active, a {
+	text-decoration: none;
+	color: #36f;
+	font-weight: bold;
+}
+a:hover {
+	cursor: pointer;
+	color: #03f;
+}
+.product {
+	width: 650px;
+	padding: 6px;
+	bordeR: 1px solid #333;
+	margin: 6px auto;
+	text-align: left;
+}
+.product h3 {
+	border-bottom: 1px solid #333;
+	margin-bottom: 12px;
+}
+.product .info {
+	clear: both;
+	text-align: center;
+	padding: 0 0 24px 0;
+}
+.product .info h1 {
+	float: left;
+	margin-bottom: 12px;
+}
+.product .specs {
+	width: 100%;
+	clear: both;
+	float: left;
+}
+.product .specs .spec {
+	width: 50%;
+	float: left;
+}
+.product .spec .label {
+	font-weight: bold;
+}
+.product .decors {
+	width: 100%;
+	clear: both;
+	margin: 24px 0 0 0;
+	float: left;
+}
+.product .decors .decor, .product .decors .wood {
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+.product .features {
+	width: 100%;
+	float: left;
+	clear: both;
+}

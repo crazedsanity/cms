@@ -1,0 +1,4 @@
+media/*
+!media/.keep
+thumbs/*
+!thumbs/.keep

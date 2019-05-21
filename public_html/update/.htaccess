@@ -1,0 +1,9 @@
+
+RewriteEngine on
+
+# Rewrite every request that doesn't match an actual file to our index page.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/update/_elements
+RewriteBase /update/
+RewriteRule ^(.*)$ index.php?u=$1 [L,QSA]

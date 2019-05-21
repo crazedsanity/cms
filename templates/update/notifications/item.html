@@ -1,0 +1,39 @@
+<form method="POST" enctype="multipart/form-data" action="/update/notifications/save.php">
+
+	<div id="tabs">
+			<ul>
+				<li><a href="#tab-general"><span>General</span></a></li>
+			</ul>
+		<div id="tab-general">
+			<p>
+				<label for="notificationType">Select Notification Type</label><br>
+				<select id="notificationType" name="notifications[notification_type_id]" class="title">
+{typeOptionList}
+				</select>
+			</p>
+			<p>
+				<label for="notificationActive">Active?</label><br>
+				<select id="notificationActive" name="notifications[is_active]" class="title">
+					<option value='1'{isActive1}>Active</option>
+					<option value='0'{isActive0}>Inactive</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="notificationTitle">Notification Title</label><br>
+				<input id="notificationTitle" name="notifications[title]" class="title" placeholder="Notification Title" value="{title}" />
+			</p>
+
+			<p>
+				<label for="editor">Notification Text</label><br>
+				<textarea id="editor" name="notifications[body]" placeholder="Content of the notification" class="editor">{body}</textarea>
+			</p>
+
+			<div class="form-controls">
+				<button type="submit" class="positive"><img src="/update/_elements/images/icons/tick.png" alt=""> Save</button>
+			</div>
+
+			<input type="hidden" name="notifications[notification_id]" value='{notification_id}' />
+		</div>
+	</div>
+</form>

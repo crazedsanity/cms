@@ -1,0 +1,70 @@
+/*
+*, * *, * * * {
+	max-width: 700px;
+	background: none;
+	margin: 0;
+	padding: 0;
+	
+}
+*/
+/*
+body * {display: block;}
+*/
+
+html {background: #FFF;}
+
+body {
+	background: #FFF;
+	border: 0;
+	max-width: 700px;
+	background: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+#inside p {margin: 0px 0px 10px 0px;}
+
+#share, #header, #promo, #footer, .btn-left, .btn-right, .btn-bg, #bg, #reservations-menu, #logo, #number {
+	display: none;
+}
+#map {
+	display: block;
+	float: left;
+}
+#inside-top-spur {
+	margin: 0;
+	padding: 0;
+}
+#page, #wrap, #container, #main, #inside {
+	margin: 0;
+	padding: 0;
+}
+#printer-header {
+	display: block;
+	width: 700px;
+	height: 150px;
+	display: block;
+}
+
+#inside {display: block; margin: 0; padding: 0;}
+
+#inside .left {
+	display: none;
+}
+
+.resnum {display: block; border: 1px solid #000; height: 35px; margin-bottom: 20px;}
+
+.mmnotes {display: block; border: 1px solid #000; height: 100px; margin: 20px 0px;}
+
+.mmprintdate {display: block; margin-bottom: 10px; text-align: center;}
+
+#map {display: block; page-break-before: always;}
+
+.date {border-bottom: 1px solid #000; margin-top: 20px; margin-bottom: 5px;}
+
+.name {text-transform: uppercase; margin: 10px 0px;}
+
+.disclaimer {margin-top: 20px;}
+
+

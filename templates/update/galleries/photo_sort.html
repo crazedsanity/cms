@@ -1,0 +1,14 @@
+
+<p><a href="/update/galleries/index.php">View All &rsaquo;</a></p>
+<p class="sub-title">Sort {category} Gallery Photos</p>
+<!-- BEGIN section -->
+<h3>Gallery: {name}</h3>
+<ul id="sortable">
+	<!-- BEGIN row --><li rel="{gallery_photo_id}" class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>{photoname}</li>
+	<!-- END row -->
+</ul>
+<!-- END section -->
+<form method="POST" action="?gallery_photo_id={gallery_photo_id}" enctype="multipart/form-data">
+	<input type="hidden" name="sort" id="sort" value="" />
+	<button type="submit" class="positive"><img src="/update/_elements/images/icons/tick.png" alt=""/> Save</button>
+</form>

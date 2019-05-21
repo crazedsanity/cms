@@ -1,0 +1,51 @@
+
+<p class="{pageOptionsClass}">
+	<a href="{SECTION_URL}/item.php?type=folder&action=add" id="add_folder" class="add">Add Folder &rsaquo;</a>
+</p>
+   
+<!--<p>
+	SECTION: {SECTION}<br>
+	PAGE_URL: {PAGE_URL}<br>
+	SECTION_URL: {SECTION_URL}
+</p>-->
+
+<br/>
+
+<!-- BEGIN folderRow -->
+<table class="listingtable">
+	<thead>
+	<tr>
+		<th class="toggle">{display_name}</th>
+		<th class="folder controls">
+			<a href="{SECTION_URL}/item.php?type=media&media_folder_id={media_folder_id}&action=add" class="add">Add Media</a>
+			<a href="{SECTION_URL}/item.php?type=folder&media_folder_id={media_folder_id}&action=edit" class="{folderRowEditClass} edit">Edit</a>
+			<a href="javascript:;" data-type="folder" data-id="{media_folder_id}" data-keyname="media_folder_id" class="{folderRowDeleteClass} formdelete ui-button ui-widget ui-corner-all">Delete</a>
+		</th>
+	</tr>
+	</thead>
+	<tbody>
+	<!-- BEGIN mediaRow -->
+	<tr>
+		<td class="row mediaRow parent_{parentIndex} mediaPreview {isImageClass}" id="row{media_id}" style="position:relative;">
+			<a href="/data/upfiles/media/{filename}" target="_blank">{title}</a> 
+			<div class="preview row{media_id}"></div>
+		</td>
+		<td class="controls options">
+			<a href="{SECTION_URL}/item.php?type=media&media_id={media_id}&action=edit" class="edit">Edit</a>
+			<a href="javascript:;" data-id="{media_id}" data-type="media" class="{mediaRowDeleteClass} formdelete delete">Delete</a>
+		</td>
+	</tr>
+	<!-- END mediaRow -->
+	</tbody>
+</table>
+<!-- END folderRow -->-
+
+
+<script>
+	$(document).ready(function() {
+		
+		$("table.listingtable thead th.toggle").click(function() {
+			$(this).parents("table").children("tbody").toggle();
+		});
+	});
+</script>

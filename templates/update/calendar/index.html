@@ -1,0 +1,145 @@
+
+
+<script type="text/javascript" src="/_elements/components/moment/moment.js"></script>
+<link href="/_elements/components/fullcalendar/dist/fullcalendar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/_elements/components/fullcalendar/dist/fullcalendar.js"></script>
+
+<script type='text/javascript' src="/update/_elements/js/calendar.js"></script>
+<link href="/update/_elements/css/calendar.css" rel="stylesheet" type="text/css" />
+
+<style>
+	div.colors .item .one {
+		border-radius:3px;
+		display: block;
+		margin-top: 4px;
+		padding: 5px;
+		font-weight: bold;
+	}
+</style>
+	
+    
+<script type="text/javascript">
+	$(document).ready(function(){
+		// TODO: this should probably get moved into calendar.js
+		$('#event-all-day').click(function(){
+			$("#event-start-time").val('');
+			$("#event-end-time").val('');
+		});
+		$(".datepair input.time").timepicker({
+			'showDuration': true,
+			'timeFormat':	'g:ia'
+		});
+		
+		$(".datepair").datepair();
+	});
+</script>
+	
+<style type="text/css">
+	// styles
+	{GENERATED_STYLES}
+</style>
+
+
+<div class="calendar-controls {calendarControlsClass}">
+	<div>
+		<button id="add-entry" class="add">Add Event</button>
+		<button id="add-cal" class="add">Add Calendar</button>
+	</div>
+		<button id="refresh">Refresh</button>
+</div>
+
+<div class="colors">
+	<!-- BEGIN editCalendar -->
+	<div class="item CC{color}" rel="{calendar_id}">
+		<div class="color">
+			<div class="one">
+				<a href="javascript:editCalendarDialog({calendar_id}); void(0);" title="Edit Calendar">{title}</a>
+			</div>
+		</div>
+	</div>
+	<!-- END editCalendar -->
+</div>
+
+<br clear="all">
+<div id="loading"><img src="/update/_elements/img/loading.gif" width="16" height="16" alt="Loading Animated Image"><p>Loading...</p></div>
+<div id='calendar'></div>
+
+<div id="dialog-new-cal" title="Create new calendar">
+	<form>
+		<label for="name">Name</label>
+		<input type="text" name="name" id="cal-name" class="text ui-widget-content ui-corner-all" required>
+	</form>
+</div>
+
+<div id="dialog-error" title="Error">
+
+</div>
+<div id="dialog-success" title="Saved">
+
+</div>
+
+<div id="dialog-edit-cal" title="Edit calendar" style="display:none;">
+	<form>
+		<input type="hidden" name="id" id="edit-cal-id">
+		<input type="hidden" name="id" id="edit-cal-color">
+		<label for="name">Name</label>
+		<input type="text" name="name" id="edit-cal-name" class="text ui-widget-content ui-corner-all">
+		<br>
+		<label for="name">Calendar Color</label><br>
+		<a class="select-color-menu" href="">Select Calendar Color</a>
+		<ul class="color-menu">
+			<!-- BEGIN colorMenu -->
+			<li value="{color}"><a href="#{color}" style="background-color:#{colorBG}; color:#{colorFG};">Select</a></li><!-- END colorMenu -->
+		</ul>
+	</form>
+</div>
+<div id="dialog-event" title="Event" style="display:none;">
+	<form>
+		<input type="hidden" name="id" id="event-id">
+		<ul>
+			<li>
+				<input type="text" name="name" id="event-title" class="text ui-widget-content ui-corner-all" placeholder="Untitled Event">
+			</li>
+			<li>
+				<input type="checkbox" name="all-day" id="event-all-day"><label for="all-day">All day</label>
+			</li>
+			<li class="time">
+				<p class="datepair" data-language="javascript">
+					<input type="text" name="start-date" id="event-start-date" class="date start text ui-widget-content ui-corner-all datepicker" placeholder="mm/dd/yyyy" />
+					<input type="text" name="start-time" id="event-start-time" class="time start text ui-widget-content ui-corner-all" placeholder="hh:mm am/pm" />
+					<span>to</span>
+					<input type="text" name="end-time" id="event-end-time" class="time end text ui-widget-content ui-corner-all" placeholder="hh:mm am/pm" />
+					<input type="text" name="end-date" id="event-end-date" class="date end text ui-widget-content ui-corner-all datepicker" placeholder="mm/dd/yyyy" />
+				</p>
+				<div class="clear"></div>
+			</li>
+			<li>
+				<label for="event-recurrence-type">Repeat</label><br>
+				<select id="event-recurrence-type" name="event-recurrence-type">
+{recurrenceTypeOptionList}
+				</select>
+			</li>
+			<li class="recurringoptions">
+				<ul>
+					<li class="until">
+						<label for="event-recurrence-last-timestamp">Repeat until</label><br />
+						<input type="text" name="event-recurrence-last-timestamp" id="event-recurrence-last-timestamp" class="datepicker" placeholder="mm/dd/yyyy" />
+					</li>
+				</ul>
+			</li>
+			<hr>
+			<li>
+				<label for="calendar">Calendar</label><br>
+				<select name="calendar" id="event-calendar"></select>
+			</li>
+			<li>
+				<label for="location">Where</label><br>
+				<input type="text" name="location" id="event-location" class="text ui-widget-content ui-corner-all" placeholder="Enter a location">
+			</li>
+			<li>
+				<label for="description">Description</label><br>
+				<textarea name="description" id="event-description" class="text ui-widget-content ui-corner-all"></textarea>
+			</li>
+		</ul>
+	</form>
+</div>

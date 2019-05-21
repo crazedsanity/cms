@@ -1,0 +1,32 @@
+
+<script>
+	$(document).ready(function () {
+		$('#add').button({icons: {primary: "ui-icon-plus"}});
+		$('#sort').button({icons: {primary: "ui-icon-carat-2-n-s"}});
+	});
+</script>
+<p class="{addNewGroupLink}"><a href="{SECTION_URL}/item.php" id="add">Add New Group</a></p>
+
+<table class="listingtable">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Options</th>
+		</tr>
+	</thead>  
+	<tbody>
+		<!-- BEGIN row -->
+		<tr>
+			<td>{name}</td>
+			<td>{description}</td>
+			<td>
+				<a href="/update/accounts/groups/item.php?group_id={group_id}" class="edit {editGroupLink}">Edit</a>
+				<a href="javascript:;" class="delete formdelete {deleteGroupLink}" data-id="{group_id}">Delete</a>
+			</td>
+		</tr>
+		<!-- END row -->
+
+	</tbody>
+</table>
+	

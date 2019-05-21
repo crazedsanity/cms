@@ -1,0 +1,47 @@
+
+
+	<p>
+		<a id="add" class='add' href="{PAGE_URL}/item.php">Add Notification</a>
+		<!--<a id="sort" class='sort' href="{PAGE_URL}/sort.php">Sort Notifications</a>-->
+	</p>
+			
+	<table width="100%" class='listingtable' id='thetable'>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Created</th>
+				<th>Type</th>
+				<th>Preview</th>
+				<th>Options</th>
+			</tr>
+		</thead>
+		<tbody>
+		<!-- BEGIN row -->
+		<tr>
+			<td>
+				<span class="status-{statusClass}" alt='statusClass' title='{statusClass}'>&bullet;</span>
+				{title}
+			</td>
+			
+			<td>{date_created}</td>
+			
+			<td>
+				<i class="fa fa-{icon}" />
+				{description}
+			</td>
+			
+			<td>{preview}</td>
+			
+			<td>
+				<a href='{PAGE_URL}/item.php?notification_id={notification_id}' class='{editHidden}'>Edit</a>  |
+				<a href='javascript:;' data-id='{notification_id}' class='formdelete {deleteHidden}'>Delete</a>
+			</td>
+		</tr>
+		<!-- END row --><!-- BEGIN noData -->
+		<tr>
+			<td colspan='3' class='nodata'>No Records Found</td>
+		</tr>
+		<!-- END noData -->
+		</tbody>
+	
+	</table>

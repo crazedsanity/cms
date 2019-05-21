@@ -1,0 +1,315 @@
+/*#products .cat{
+	width: 697px;
+	height: 185px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 12px;
+	cursor: pointer;
+}
+
+#products .cat img{
+	width: 100%;
+	height: 100%;
+}
+
+#products .cat .text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(238,184,1,0.85);
+	opacity: 1;
+	width: 228px;
+	padding: 0 0;
+	z-index: 20;
+	height:185px;
+}
+
+#products .cat.cat0 .text{
+	background: rgba(238,184,1,1);
+}
+
+#products .cat.cat1 .text{
+	background: rgba(191,148,0,1);
+}
+
+#products .cat.cat2 .text{
+	background: rgba(143,108,0,1);
+}
+#products .cat.cat3 .text{
+	background: rgba(127,108,49,1);
+}
+
+#products .cat .text h1{
+	color: #FFF; 
+	font-weight: bold; 
+	font-size: 22px; 
+	width: 228px; 
+	text-align: center; 
+	padding: 70px 0px 0px 0px;
+
+}
+#products .cat .text p{
+text-align: center; 
+color: #ffffff; 
+font-size: 11px; 
+line-height: 15px; 
+font-size: 12px;
+padding: 0px 10px;
+text-transform: none;
+}
+#products .cat .text a{
+background: #BF9400;
+width: auto;
+float: right;
+
+display: block;  
+padding: 8px 14px; 
+color: #FFF; 
+margin-right: 13px; 
+font-size: 10px;
+opacity: 0.60;
+text-transform: uppercase;
+
+position: absolute;
+right: 0;
+bottom: 12px;
+}
+#products .cat.cat0 .text a{
+background: #bf9400;
+}
+#products .cat.cat1 .text a{
+background: #a58000;
+}
+#products .cat.cat2 .text a{
+background: #735700;
+}
+#products .cat.cat3 .text a{
+background: #5a4d23;
+}
+
+#products .cat .text a{
+
+}
+
+
+
+
+
+#products .cat .overlay{
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.15);
+position: absolute;
+top: 0;
+left: 0;
+z-index: 10;
+
+}
+#products .cat:hover .overlay{
+
+
+}
+
+
+
+
+
+.form{
+width: 100%;
+}
+.form input, .form select, .form textarea{
+border: 1px solid #ddd;
+color: #666;
+font-family: "ff-din-web-n4", "ff-din-web", sans-serif;
+padding: 6px 1% 3px 1%;
+}
+.form input:focus, .form select:focus, .form textarea:focus{
+border: 1px solid #aaa;
+color: #333;
+}
+.form select{
+padding: 6px 3px 6px 3px;
+height: 30px;
+}
+.form select option{
+padding: 3px 3px 3px 3px;
+}
+
+.form label.fielderror{
+color: #f00; 
+font-weight: bold;
+}
+.form h2{
+clear: both;
+margin: 36px 0 0 0;
+float: left;
+width: 100%;
+}
+.form p{
+clear: both;
+}
+
+.form .row{
+width: 100%;
+clear: both;
+}
+.form .row.head .field{
+font-weight: bold; 
+border-bottom: 1px solid #000;
+}
+.form .row .field{
+float: left;
+width: 33%;
+padding: 6px 0;
+}
+.form .row.one .field{
+width: 100%;
+}
+.form .row.two .field{
+width: 50%;
+}
+.form .row.three .field{
+width: 33%;
+}
+.form .row.four .field{
+width: 25%;
+}
+.form .row.five .field{
+width: 20%;
+}
+.form .row.six .field{
+float: left;
+width: 16%;
+}
+.form .row .field label{
+display: block; 
+width: 90%;
+}
+.form .row .field label span{
+clear: both;
+display: block;
+}
+.form .row .field label input{
+width: 98%;
+font-size: 15px;
+}
+.form .row .field label textarea{
+width: 98%;
+min-height: 100px;
+font-size: 15px;
+
+}
+.form .row .field label select{
+width: 98%;
+font-size: 15px;
+}
+
+
+
+
+
+
+
+.successmsg{
+color: green;
+font-weight: bold;
+text-align: center;
+}
+.errormsg{
+color: red;
+font-weight: bold;
+text-align: center;
+}
+
+
+
+
+.form.apply .field.school{
+width: 34%;
+}
+.form.apply .field.years{
+width: 7%;
+}
+.form.apply .field.diploma{
+width:10%;
+}
+.form.apply .field.gpa{
+width: 7%;
+}
+.form.apply .field.major{
+width: 20%;
+}
+.form.apply .field.minor{
+width: 20%;
+}
+
+
+.form.apply .references .field.name{
+width: 50%;
+}
+.form.apply .references .field.phone{
+width: 25%;
+}
+.form.apply .references .field.years{
+width: 25%;
+}
+
+
+.form.apply .organization .field.name{
+width: 66%;
+}
+.form.apply .organization .field.phone{
+width: 33%;
+}
+
+.form.apply .employmentrow div.employer{
+border: 1px solid #ddd;
+padding: 6px;
+float: left;
+width: 98%;
+margin: 0 1% 24px 1%;
+clear: both;
+background: #eee;
+}
+
+#educationadd, #referenceadd, #organizationadd, #employmentadd{
+float: right;
+margin: 3px;
+padding: 9px 12px;
+border: 1px solid #ccc;
+display: block;
+background: #333;
+color: #fff;
+text-transform: uppercase;
+}
+
+
+
+.form .submit{
+float: right;
+margin: 12px;
+padding: 9px 12px;
+border: 1px solid #ccc;
+display: block;
+background: #333;
+color: #fff;
+text-transform: uppercase; 
+font-weight: bold;
+}
+
+
+.right ul {margin: 10px 10px 0px 30px; line-height: 18px;}
+.right ul li {list-style: square; margin-bottom: 10px;}
+
+.caption {font-style: italic; font-size: 11px;}
+
+
+
+#inside .right #listing .item .right{
+float: left;
+}
+
+
+*/
+
+

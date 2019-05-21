@@ -1,0 +1,126 @@
+
+@media all {
+	
+	#primary-menu ul li.hidden-top-menu {
+		display:none !important;
+	}
+	
+}
+
+.item.hours {
+background: #f7f3ee;
+padding: 20px;
+-moz-border-radius: 10px;
+margin-top: 10px;
+border: 1px solid #cda87f;
+margin-top:30px;
+margin-bottom:30px;}
+
+.item.hours ul li {list-style-type:none !important;line-height: 1.4;}
+
+
+/*.TA_cdsratingsonlynarrow, .TA_certificateOfExcellence {width:50%;margin:0 auto;}*/
+#CDSWIDCOE {margin:0px !important;}
+.TA_certificateOfExcellence {margin-top:-20px;}
+.cdsROW.narrow {width: 148px !important;}
+
+
+.postcontent h1 {
+	color: #392210;
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.postcontent h2 {
+	color: #392210;/*
+	font-size: 30px;*/
+	font-size: 26px;
+	line-height: 24px;
+	font-weight: 600;/*
+	line-height: 30px;*/
+	margin-bottom: 5px;
+}
+.postcontent h2 a {
+	color: #392210;
+}
+.postcontent h3 {
+	color: #392210;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.postcontent h3 a {
+	color: #392210;
+}
+.postcontent h4 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.postcontent h5 {
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-weight: 600;
+}
+.postcontent h6 {
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+.postcontent table {width:100% !important;}
+
+.btn-reservation{
+background-color: #f28437;
+width: 180px;
+height: auto;
+float: left;
+font-size: 17px;
+font-weight: 700;
+text-align: center;
+padding-top: 17px;
+border-radius: 3px;
+padding-bottom:15px;
+margin-right: 20px;
+}
+
+@media (max-width:768px) {
+	.btn-reservation{
+
+float: none;
+
+margin-right: 0px;
+}
+}
+
+.btn-reservation a{color:#fff;}
+.btn-reservation a:hover{color: #392210;}
+
+
+#myModal1 {margin-top:100px;}
+
+#myModal1 .member {
+border-bottom: 1px solid #CDA87F;
+margin: 10px 0px;
+padding:20px;
+text-align:left;
+}
+
+#myModal1 .member img {
+float: left;
+margin: 0px 20px 10px 0px;
+}
+
+
+.item {margin: 0px 0px 30px 0px;font-size:16px;}
+
+.item p {line-height: 1.4 !important;}
+
+.item.hours p {line-height: 1.8 !important;}
+
+.item.video {margin-bottom:30px;}
+
+.item .header {float: left;
+font-size: 18px;
+font-weight: 700;
+margin: 0px 0px 0px 0px;}

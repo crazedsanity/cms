@@ -1,0 +1,47 @@
+
+<h3>{title}</h3>
+<form method="post" action="" enctype="multipart/form-data">
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-1"><span>General</span></a></li>
+		</ul>
+		<div id="tab-1">
+			<p id="title_wrapper">
+				<label for="title">Title</label> <br>
+				<input type="text" id="title" class="title" name="menu_item[title]" value="{title}">
+			</p>
+			<p id="page_id_wrapper">
+				<label for="parent_id">Page</label> <br>
+				<select name="menu_item[page_id]" id="page_id" class="title">
+{pageOptionsList}
+				</select>
+			</p>
+			<p id="menu_wrapper">
+				<label for="sub_menu_id">Menu</label> <br>
+				<select name="menu_item[sub_menu_id]" id="sub_menu_id" class="title">
+{topMenuOptionsList}
+				</select>
+			</p>
+			<p>
+				<label for="parent_id">Parent Item</label> <br>
+				<select name="menu_item[parent_id]" id="parent_id" class="title">
+{parentMenuOptionsList}
+				</select>
+			</p>
+			<p>
+				<label for="link">Class</label> - <i>Class placed on &lt;li&gt; item</i> <br>
+				<input type="text" id="link" class="title" name="menu_item[class]" value="{class}">
+			</p>
+			<p id="link_wrapper">
+				<label for="link">Link</label> - <i>Overrides page selection</i> <br>
+				<input type="text" id="link" class="title" name="menu_item[link]" value="{link}"> - <i>Must include http://</i>
+			</p>
+		</div>
+	</div>
+	<input type="hidden" name="menu_item_id" value="{menu_item_id}">
+	<input type="hidden" name="menu_item[menu_id]" value="{menu_id}">
+	<div class="form-controls">
+		<button type="submit" class="positive"><img src="/update/_elements/images/icons/tick.png" alt=""> Save</button>
+	</div>
+	<div class="clear"></div>
+</form>

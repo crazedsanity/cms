@@ -1,0 +1,19 @@
+
+<script>
+	$(document).ready(function () {
+		$('#return').button({icons: {primary: "ui-icon-arrowreturnthick-1-w"}});
+	});
+</script>
+<p>
+	<a href="/update/galleries/index.php" id="return">View All &rsaquo;</a>
+</p>
+<p class="sub-title">Sort {category} Galleries</p>
+<ul id="sortable">
+	<!-- BEGIN row -->
+	<li rel="{gallery_id}" class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>{name}</li>
+	<!-- END row -->
+</ul>
+<form method="POST" action="?gallery_id={gallery_id}" enctype="multipart/form-data">
+	<input type="hidden" name="sort" id="sort" value="" />
+	<button type="submit" class="positive"><img src="/update/_elements/images/icons/tick.png" alt=""/> Save</button>
+</form>

@@ -1,0 +1,51 @@
+<style>
+	span.note {
+		font-style: italic;
+		font-size: 80%;
+	}
+</style>
+
+
+<h3>{title}</h3>
+<form method="POST" enctype="multipart/form-data">
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-1"><span>General</span></a></li>
+		</ul>
+		<div id="tab-1">
+			<p>
+				<label>Clean (Display) Name</label><br>
+				<input type="text" class="title" name="asset[clean_name]" value="{clean_name}" required>
+			</p>
+			<p>
+				<label>Name</label><br>
+				<span class="note">This is the name referred to in the code, usually just the lowercase version of the clean_name.  
+					Be very careful when changing this.</span><br>
+				<input type="text" class="title" name="asset[name]" value="{name}" required>
+			</p>
+			<p>
+				<label>Location</label><br>
+				<span class="note">Link to where this asset can be modified. This is not required.</span><br>
+				<input type="text" class="title" name="asset[location]" value="{location}">
+			</p>
+			<p>
+				<label for="asset[visible]">Visible?</label><br>
+				<span class="note">Selecting "yes" means this will be available for selection under a page's "asset" dropdown</span><br>
+				<select class="title" name="asset[visible]" required>
+					<option value="1" {visible__1}>Yes</option>
+					<option value="0" {visible__0}>No</option>
+{visibleOptionList}
+				</select>
+			</p>
+			
+
+		</div>
+	</div>
+	<input type="hidden" name="asset_id" value="{asset_id}">
+	<input type="hidden" name="action" value="{action}">
+	<div class="form-controls">
+		<button type="submit" class="positive"><img src="{ADMIN_URL}/_elements/images/icons/tick.png" alt=""> Save</button>
+	</div>
+	<div class="clear"></div>
+</form>
+	

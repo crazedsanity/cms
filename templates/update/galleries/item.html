@@ -1,0 +1,26 @@
+
+<h3>{title}</h3>
+<form method="POST" enctype="multipart/form-data">
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-1"><span>General</span></a></li>
+		</ul>
+		<div id="tab-1">
+			<p>
+				<label for="title">Name</label><br>
+				<input type="text" class="title" name="gallery[name]" value="{name}">
+			</p>
+			<p class="h200">
+				<label for="blurb">Description</label><br>
+				<textarea name="gallery[description]" class="editor" id="editor" cols="105" rows="20">{description}</textarea>
+			</p>
+
+		</div>
+
+	</div>
+	<input type="hidden" name="gallery_id" value="{gallery_id}">
+	<div class="form-controls">
+		<button type="submit" class="positive"><img src="/update/_elements/images/icons/tick.png" alt=""> Save</button>
+	</div>
+	<div class="clear"></div>
+</form>

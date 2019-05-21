@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="/update/_elements/css/reset.css?_={SITE_VERSION}" rel="stylesheet" type="text/css">
+	<link href="/update/_elements/css/style.css?_={SITE_VERSION}" rel="stylesheet" type="text/css">
+
+	<link href="/update/_elements/css/buttons.css?_={SITE_VERSION}" rel="stylesheet" type="text/css">
+	<link href="/update/_elements/css/forms.css?_={SITE_VERSION}" rel="stylesheet" type="text/css">
+	<link href="/_elements/css/alert.css?_={SITE_VERSION}" rel="stylesheet" type="text/css">
+
+	<link rel="icon" href="/favicon.ico?_={SITE_VERSION}">
+
+
+	<script type="text/javascript" src="/_elements/components/jquery/dist/jquery.js?_={SITE_VERSION}"></script>
+	<script type="text/javascript" src="/_elements/components/jquery-ui/jquery-ui.js?_={SITE_VERSION}"></script>
+	<link rel='stylesheet' type='text/css' href='/_elements/components/jquery-ui/themes/cupertino/jquery-ui.css?_={SITE_VERSION}'>
+	
+	<link rel="stylesheet" href="/_elements/components/font-awesome/css/font-awesome.css?_={SITE_VERSION}">
+	<link rel="stylesheet" href="/update/_elements/css/print.css?_={SITE_VERSION}">
+	
+	<script type="text/javascript" src="/_elements/components/ckeditor/ckeditor.js?_={SITE_VERSION}"></script>
+	<script type="text/javascript" src="/_elements/components/ckeditor/config.js?_={SITE_VERSION}"></script>
+	<script type="text/javascript" src="/_elements/components/ckeditor/adapters/jquery.js?_={SITE_VERSION}"></script>
+    
+	<script type="text/javascript" src="/update/_elements/js/functions.js?id={SITE_VERSION}"></script>
+	
+	
+	
+<script type='text/javascript' src="/_elements/components/datepair.js/dist/datepair.js"></script>
+<script type='text/javascript' src="/_elements/components/datepair.js/dist/jquery.datepair.js"></script>
+
+<link href="//jonthornton.github.io/jquery-timepicker/jquery.timepicker.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src="//jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
+
+	
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			// create jquery exists() function to use when needed as shown below to prevent errors
+			jQuery.fn.exists = function() {
+				return jQuery(this).length > 0;
+			}
+			if( $('#editor').exists() ) {
+				CKEDITOR.replace( 'editor',  {customConfig: '/_elements/ckeditor/config.js'} );
+			}
+			$('textarea.mini-editor').each(function(){
+				if($(this).attr('id') !== undefined) {
+					CKEDITOR.replace($(this).attr('id'), {customConfig: '/_elements/components/ckeditor/config.js?_={SITE_VERSION}'});
+				}
+			});
+
+			$("input:visible:enabled:first").focus();
+			$("#tabs").tabs(); 
+			$('.datepicker').datepicker({dateFormat: "yy-mm-dd"});
+			$('.datepicker2').datepicker({dateFormat: "yy-mm-dd"});
+			//$("#sortable").sortable();
+	
+			//ACCORDION BUTTON ACTION	
+			$('div.accordionButton').click(function() {
+				$('div.accordionContent').slideUp('normal');	
+				$(this).next().slideDown('normal');
+			});
+ 
+			//HIDE THE DIVS ON PAGE LOAD	
+			$("div.accordionContent").hide();
+			$("#sortable").sortable({
+				update: updateSort
+			});
+
+			$("#sortable-features").sortable({
+				update: updateFeaturesSort
+			});
+		});
+	
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('#add, .add').button({ icons: { primary: "ui-icon-plus" } });
+			$('#sort, .sort').button({ icons: { primary: "ui-icon-carat-2-n-s" } });
+			$('.edit').button({ icons: { primary: "ui-icon-pencil" } });
+			$('.delete').button({ icons: { primary: "ui-icon-close" } });
+			$('#return, .return').button({ icons: { primary: "ui-icon-arrowreturnthick-1-w" } });
+			$('.button-set').buttonset();
+			$('a.deletelink').not(".delete").click(function() {
+				return(confirm("Are you sure you want to delete this record?"));
+			});
+		});
+	</script>
+	<title>{TITLE_DIVIDE}{HTML_TITLE}Administrative Area</title>
+</head>
+<body>
+	<div id="wrap_s">
+		<div id="header">
+		  <div id="signout">
+			  <a target="_blank" href="/">View Site</a> | <a href="/update/logout.php">Sign Out</a><br>
+			  USERNAME: <strong>{USERNAME}</strong>
+		  </div>
+		  <a href="/update/"><img src="{logopath}" style="max-height: 93px;" alt="Administrative Area" border="0"></a>
+		</div>
+		{ALERT}
+		{ADMIN_MENU}
+		<h2 class="page-title">{PAGE_TITLE}</h2>
+		<div class="announcements">
+			<h3 class="sub-title"></h3>
+			<p></p>
+		</div>
+		<p class="small-grey">{PAGE_DESCRIPTION}</p>
+
+		{ADMIN_CONTENT}
+
+
+		<div id="delete">
+			<form method="POST" action="{SECTION_URL}/delete.php">
+				<input type="hidden" id="theid" name="{keyName}" value="">
+				<input type="hidden" id="confirmation" name="confirmation" value="INVALID">
+				<input type="hidden" id="type" name="type" value="INVALID">
+			</form>
+		</div>
+
+	</div>
+	<div class="clr"></div>
+	<div id="footer">&copy; KKBold</div>
+</body>
+</html>

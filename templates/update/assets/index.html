@@ -1,0 +1,39 @@
+
+<script>
+	$(document).ready(function () {
+		$('#add, .add').button({icons: {primary: "ui-icon-plus"}});
+	});
+</script>
+
+<!-- BEGIN pageOptions -->
+	<p><a href="{SECTION_URL}/item.php?action=add" id="add">Add Item &rsaquo;</a></p>
+<!-- END pageOptions -->
+<i style="color:green;" class="fa fa-check"></i> = Selectable as an asset<br><br>
+
+<table class="listingtable">
+	<thead>
+		<tr>
+			<th style="width:1em"></th>
+			<th>Clean Name</th>
+			<th>Name</th>
+			<th>Location</th>
+			<th>Options</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- BEGIN row -->
+		<tr>
+			<td><i class="fa fa-{faIcon}" style="color:{visibilityColor}"></i></td>
+			<td><strong>{clean_name}</strong></td>
+			<td>{name}</td>
+			<td><a href="{location}" target="_blank">{location}</a></td>
+			<td>
+				<!-- BEGIN rowOption_edit -->
+				<a href="{SECTION_URL}/item.php?action=edit&asset_id={asset_id}" class="edit">Edit</a><!-- END rowOption_edit -->
+				<!-- BEGIN rowOption_delete -->
+				<a data-id="{asset_id}" href="javascript:;" class="formdelete delete">Delete</a><!-- END rowOption_delete -->
+			</td>
+		</tr>
+		<!-- END row -->
+	</tbody>
+</table>

@@ -1,0 +1,41 @@
+
+<script>
+	$(document).ready(function () {
+		$('#add, .add').button({icons: {primary: "ui-icon-plus"}});
+	});
+</script>
+
+<!-- BEGIN pageOptions -->
+	<p><a href="{SECTION_URL}/item.php" id="add">Add News &rsaquo;</a></p>
+	<span style="color:#090;"> &bull; </span> = approved<br><br>
+<!-- END pageOptions -->
+
+<table class="listingtable lesspadding">
+	<thead>
+		<tr>
+			<th width="1"></th>
+			<th>Title</th>
+			<th>Start Date</th>
+			<th>End Date</th>
+			<th>Options</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- BEGIN newsRow -->
+		<tr>
+			<td width="1"><!-- BEGIN rowApproved --><span style="color:#090;"> &bull; </span><!-- END rowApproved --></td>
+			<td><strong>{title}</strong></td>
+			<td>{start_date}</td>
+			<td>{end_date}</td>
+			<td>
+				<!-- BEGIN rowOption_edit -->
+				<a href="{SECTION_URL}/item.php?news_id={news_id}">Edit</a>
+				<!-- END rowOption_edit -->
+				<!-- BEGIN rowOption_delete -->
+				| <a data-id="{news_id}" href="javascript:;" class="formdelete">Delete</a>
+				<!-- END rowOption_delete -->
+			</td>
+		</tr>
+		<!-- END newsRow -->
+	</tbody>
+</table>

@@ -1,0 +1,47 @@
+
+
+.alert, .alert.fatal, .alert.error, .alert.notice, .alert.status {
+	color:#fff;
+	background:#ea0000;
+	padding:9px;
+	display:block;
+	margin-bottom:10px;
+	text-align: center;
+	font-family: arial;
+}
+.alert.fatal, #alert div.alert.fatal {
+	color:#fff;
+	background:#ea0000;
+	border-color: #fff;
+	text-align: center;
+	font-family: arial;
+}
+.alert.error, #alert div.alert.error {
+	color: #fff;
+	background: #8f1400;
+	border-color: #FFF;
+	text-align: center;
+	font-family: arial;
+}
+.alert.notice, #alert div.alert.notice {
+	background: #529A86;
+	color: #fff;
+	border-color: #fff;
+	text-align: center;
+	font-family: arial;
+}
+.alert.status, #alert div.alert.status {
+	background: #132adb;
+	color: #fff;
+	border-color: #fff;
+	font-family: arial;
+}
+.alert a, #alert div.alert a {
+	text-decoration: underline !important;
+}
+.alert {
+	font-weight: normal !important;
+}
+.alert .title {
+	font-weight: bold;
+}

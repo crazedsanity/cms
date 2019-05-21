@@ -1,0 +1,353 @@
+body {
+	text-align: center;
+	font-family:myriad-pro, Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #666;
+	line-height: 130%;
+	letter-spacing: 1px;
+	background: #252525 url(/_elements/img/black_back.jpg) repeat 0 0;
+
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	color: #999;
+	font-family:myriad-pro, Verdana, Geneva, sans-serif;
+	text-transform: capitalize;
+	letter-spacing: 1.5px;
+	padding: 0 0 0px 0px;
+	margin: 0 0 6px 0;
+	line-height: 150%;
+	width: 100%;
+}
+h1 {
+	font-size: 27px;
+	margin: 15px 0 0px 0px;
+	padding: 0px 0 0 0;
+}
+h2 {
+	font-size: 24px;
+	margin: 12px 0 6px 0px;
+	padding: 0px 0 0 0;
+}
+h3 {
+	font-size: 21px;
+	margin: 9px 0 0px 0px;
+	padding: 0px 0 0 0;
+}
+h4 {
+	font-size: 18px;
+	margin: 6px 0 0px 0px;
+	padding: 0px 0 0 0;
+}
+h5 {
+	font-size: 15px;
+	margin: 3px 0 0px 0px;
+	padding: 0px 0 0 0;
+}
+h6 {
+	font-size: 12px;
+	margin: 0px 0 0px 0px;
+	padding: 0px 0 0 0;
+}
+blockquote {
+	margin: 48px 48px;
+	padding: 0 0;
+	font-size: 18px;
+	line-height: 160%;
+	padding: 6px 18px;
+	border-bottom: 1px dashed #ccc;
+	border-top: 1px dashed #ccc;
+}
+ol, ul {
+	margin: 12px 0;
+}
+ol li {
+	padding: 0 0 3px 24px;
+	list-style: decimal;
+	list-style-position: inside;
+}
+ul li {
+	padding: 0 0 3px 24px;
+	list-style: disc;
+	list-style-position: inside;
+}
+p {
+	line-height: 130%;
+	padding: 0 12px;
+	margin: 0 0 0 0;
+	font-family:futura-pt, Arial, Helvetica, sans-serif;
+}
+input, textarea, select, option {
+	font-family:myriad-pro, Verdana, Geneva, sans-serif;
+}
+.image_right {
+	float: right;
+	padding: 6px;
+	margin: 6px 0 6px 6px;
+	border: 1px solid #ccc;
+}
+.image_left {
+	float: left;
+	padding: 6px;
+	margin: 6px 6px 6px 0;
+	border: 1px solid #ccc;
+}
+.errormsg {
+	color: red;
+	font-weight: bold;
+	margin: 6px auto;
+	width: 400px;
+	text-align: center;
+}
+.successmsg {
+	color: green;
+	font-weight: bold;
+	width: 400px;
+	margin: 6px auto;
+	text-align: center;
+}
+.sorrymsg {
+	color: #333;
+	font-weight: bold;
+	width: 400px;
+	margin: 6px auto;
+	text-align: center;
+}
+.labelerror {
+	color: #f00;
+}
+a:visited, a:hover, a:link, a:active, a {
+	text-decoration: none;
+	color: #562545;
+	font-weight: bold;
+}
+a:hover {
+	cursor: pointer;
+	color: #333;
+}
+#top, #middle, #bottom {
+	width: 100%;
+}
+.wrapper {
+	width:100%;
+	min-width: 240px;
+	min-height:100%;
+	overflow-x: hidden;
+}
+* .container {
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
+#top {
+	background: #252525 url(/_elements/img/black_back.jpg) repeat 0 0;
+	border-bottom: 4px solid #252525;
+}
+#top .container {
+	/*background: transparent url(/_elements/mobile/img/top_bg_300.jpg) no-repeat top center;*/
+}
+#top .bg{
+position: relative;
+z-index: 1;
+margin: 0 auto;
+text-align: center;
+width: 100%;
+height: 130px;
+background: url(/_elements/mobile/img/top_bg.jpg) no-repeat top center;
+}
+#top .tag{
+z-index: 2;
+position: absolute;
+top: 0;
+text-align: left;
+}
+.inside #top .bg{
+	background:none;
+background-repeat: no-repeat;
+height: 100px;
+padding: 12px 0;
+}
+.home .nav ul {
+	margin: 0 0 0 0px;
+	padding: 0 0;
+width:100%;
+float: left;
+}
+.home .nav ul li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+width:100%;
+}
+.home .nav ul li a {
+	display: block;
+	margin: 9px auto;
+	padding: 12px 0;
+	font-size: 21px;
+	width: 80%;
+	text-align: center;
+	box-shadow:         1px 1px 2px 1px #000;
+	-moz-box-shadow:    1px 1px 2px 1px #000;
+	-webkit-box-shadow: 1px 1px 2px 1px #000;
+	font-family:myriad-pro, Verdana, Geneva, sans-serif;
+}
+.home .nav ul li.red a {
+	background: #660000;
+	color: #ff3333;
+	border: 1px solid #7d0f28;
+}
+.home .nav ul li.blue a {
+	background: #023340;
+	color: #08aed8;
+	border: 1px solid #053948;
+}
+.home .nav ul li.yellow a {
+	background: #fd8100;
+	color: #fff000;
+	border: 1px solid #fd9500;
+}
+.home .nav ul li.green a {
+	background: #76761a;
+	color: #d8f511;
+	border: 1px solid #888714;
+}
+.home .nav ul li.calendar a {
+	color: #ffcc00;
+	border: 1px solid #5f215f;
+background:#5c2542;
+}
+
+
+
+
+
+.inside .nav{
+width: 100%;
+height: 115px;
+
+}
+.inside .nav ul {
+	margin: 0 0 0 0px;
+	padding: 0 0;
+width:100%;
+}
+.inside .nav ul li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+width: 25%;
+}
+.inside .nav ul li a {
+	display: block;
+	margin: 9px auto;
+	padding: 9px 0;
+	font-size: 15px;
+	width: 87%;
+	text-align: center;
+	box-shadow:         1px 1px 2px 1px #000;
+	-moz-box-shadow:    1px 1px 2px 1px #000;
+	-webkit-box-shadow: 1px 1px 2px 1px #000;
+	font-family:myriad-pro, Verdana, Geneva, sans-serif;
+}
+.inside .nav ul li.red a {
+	background: #660000;
+	color: #ff3333;
+	border: 1px solid #7d0f28;
+}
+.inside .nav ul li.blue a {
+	background: #023340;
+	color: #08aed8;
+	border: 1px solid #053948;
+}
+.inside .nav ul li.yellow a {
+	background: #fd8100;
+	color: #fff000;
+	border: 1px solid #fd9500;
+}
+.inside .nav ul li.green a {
+	background: #76761a;
+	color: #d8f511;
+	border: 1px solid #888714;
+}
+.inside .nav ul li.calendar{
+width: 100%;
+margin: 0;
+}
+.inside .nav ul li.calendar a {
+	color: #ffcc00;
+	border: 1px solid #5f215f;
+background:#5c2542;
+width: 97%;
+}
+
+
+
+
+#middle {
+	background: #fff url(/_elements/img/white_back.jpg) repeat 0 0;
+}
+#middle .container {
+	padding: 0px 0px 12px 0px;
+}
+#middle #location{
+width:100%;
+background: #ccc;
+padding: 12px 0;
+font-weight: bold;
+font-size: 13px;
+}
+#middle #location span.address{
+font-weight: normal;
+padding: 0 6px;
+}
+#bottom {
+	padding: 0 0 36px 0;
+	background: #252525 url(/_elements/img/black_back.jpg) repeat 0 0;
+border-top: 4px solid #252525;
+
+}
+#bottom p{
+text-align:center;
+padding: 6px 0;
+}
+#bottom a{
+
+	color: #cccc33;
+}
+#bottom .contacts span.phone {
+padding-left: 12px;
+	color: #cccc33;
+}
+#mapnoticewrapper {
+	top: 0;
+	left: 0;
+	position:absolute;
+	z-index: 10000000;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+#mapnoticebg {
+	background:#666;
+	opacity: 0.5;
+	height: 100%;
+	width: 100%;
+	z-index: 10000000;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#mapnotice {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background: #333;
+	padding: 12px;
+	z-index: 100000000;
+	width: 20%;
+	text-align: center;
+	color: #ccc;
+	font-weight: bold;
+}

@@ -1,0 +1,10 @@
+/nbproject/
+/vendor/
+/public_html/sitemap.xml
+/public_html/demo*.html
+sitemap.xml
+/config/*-dev.ini
+/.settings/
+/.project
+/.buildpath
+*_ORIGINAL.php
